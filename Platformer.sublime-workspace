@@ -1,0 +1,376 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"CMAKE_CURRENT",
+				"CMAKE_CURRENT_SOURCE_DIR\tbuiltin variable"
+			],
+			[
+				"inc",
+				"include_directories\tbuiltin"
+			],
+			[
+				"IMG_init",
+				"IMG_Init(int flags)\t  int"
+			],
+			[
+				"CMAKE_currnet",
+				"CMAKE_CURRENT_SOURCE_DIR"
+			],
+			[
+				"RUNTIME_",
+				"RUNTIME_OUTPUT_DIRECTORY_<CONFIG>"
+			],
+			[
+				"find",
+				"find_library"
+			],
+			[
+				"V",
+				"VERSION"
+			],
+			[
+				"cmake",
+				"cmake_minimum_required"
+			],
+			[
+				"in",
+				"index\t  int"
+			],
+			[
+				"str",
+				"str2\t  char *"
+			],
+			[
+				"ocu",
+				"occurerences"
+			],
+			[
+				"stdi",
+				"stdio.h>\t  File"
+			],
+			[
+				"s",
+				"str"
+			],
+			[
+				"re",
+				"reverse_line"
+			],
+			[
+				"f",
+				"fahr"
+			],
+			[
+				"w",
+				"wlength"
+			],
+			[
+				"wor",
+				"words_length_histogram"
+			],
+			[
+				"wo",
+				"words_length_histogram"
+			],
+			[
+				"print",
+				"printf\tprintf …"
+			]
+		]
+	},
+	"build_system": "Release",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Debug",
+					""
+				],
+				[
+					"Release",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				],
+				[
+					"Packages/Makefile/Make.sublime-build",
+					""
+				],
+				[
+					"Packages/Makefile/Make.sublime-build",
+					"Clean"
+				]
+			],
+			[
+				"Release",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"format",
+				"Clang Format: Format Selection"
+			],
+			[
+				"set theme",
+				"UI: Select Color Scheme"
+			],
+			[
+				"eanble",
+				"LSP: Enable Language Server in Project"
+			],
+			[
+				"enable",
+				"LSP: Enable Language Server Globally"
+			],
+			[
+				"disable",
+				"LSP: Disable Language Server in Project"
+			],
+			[
+				"disb",
+				"LSP: Disable Language Server Globally"
+			],
+			[
+				"setting",
+				"Preferences: LSP Settings"
+			],
+			[
+				"enab",
+				"LSP: Enable Language Server in Project"
+			],
+			[
+				"tern",
+				"Terminus: Toggle Panel"
+			],
+			[
+				"close ",
+				"Terminus: Close"
+			],
+			[
+				"disab",
+				"LSP: Disable Language Server in Project"
+			],
+			[
+				"referesh",
+				"Project: Refresh Folders"
+			],
+			[
+				"preferece",
+				"Preferences: Settings"
+			],
+			[
+				"termin",
+				"Terminus: Toggle Panel"
+			],
+			[
+				"disa",
+				"LSP: Disable Language Server Globally"
+			],
+			[
+				"cmake",
+				"Set Syntax: CMake"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"theme",
+				"UI: Select Theme"
+			],
+			[
+				"lsp settin",
+				"Preferences: LSP Settings"
+			],
+			[
+				"LSP",
+				"LSP: Enable Language Server Globally"
+			],
+			[
+				"term",
+				"Terminus: Toggle Panel"
+			],
+			[
+				"package",
+				"Install Package Control"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 136.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/aliabdulkareem/dev/Game/src/main.cpp",
+		"/Users/aliabdulkareem/dev/Game/Platformer.sublime-project",
+		"/Users/aliabdulkareem/dev/Game/CMakeLists.txt",
+		"/Users/aliabdulkareem/.zshrc",
+		"/Users/aliabdulkareem/dev/Game/Makefile",
+		"/Users/aliabdulkareem/Downloads/puzzles-20201208.84cb4c6/cube.c",
+		"/Users/aliabdulkareem/.tmp/hello.c",
+		"/Users/aliabdulkareem/Downloads/BlackCoat-cross-platform/samples/Minimal/bin/Debug/net5.0/sfmlnet-graphics-2.dll.config",
+		"/usr/local/Cellar/llvm/11.0.0_1/lib/clang/11.0.0/include/limits.h",
+		"/Users/aliabdulkareem/Library/Application Support/Sublime Text 3/Packages/User/LSP.sublime-settings",
+		"/Users/aliabdulkareem/Library/Application Support/Sublime Text 3/Packages/LSP/LSP.sublime-settings",
+		"/Users/aliabdulkareem/.tmp/hello.cpp",
+		"/Users/aliabdulkareem/Downloads/1316190007-1.cpp"
+	],
+	"find":
+	{
+		"height": 0.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 37.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.Terminus":
+	{
+		"height": 245.0
+	},
+	"output.diagnostics":
+	{
+		"height": 108.0
+	},
+	"output.exec":
+	{
+		"height": 294.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 229.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

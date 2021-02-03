@@ -1,0 +1,17 @@
+[
+{
+  "directory": "/Users/aliabdulkareem/dev/Game/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DCMAKE_INTDIR=\\\"Debug\\\" -I/usr/local/include -I../include -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -Wall -Wextra -pedantic -Werror -m64 -std=c++14 -o CMakeFiles/main.dir/Debug/src/main.cpp.o -c /Users/aliabdulkareem/dev/Game/src/main.cpp",
+  "file": "/Users/aliabdulkareem/dev/Game/src/main.cpp"
+},
+{
+  "directory": "/Users/aliabdulkareem/dev/Game/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DCMAKE_INTDIR=\\\"Release\\\" -I/usr/local/include -I../include -O3 -DNDEBUG -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -Wall -Wextra -pedantic -Werror -m64 -std=c++14 -o CMakeFiles/main.dir/Release/src/main.cpp.o -c /Users/aliabdulkareem/dev/Game/src/main.cpp",
+  "file": "/Users/aliabdulkareem/dev/Game/src/main.cpp"
+},
+{
+  "directory": "/Users/aliabdulkareem/dev/Game/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DCMAKE_INTDIR=\\\"RelWithDebInfo\\\" -I/usr/local/include -I../include -O2 -g -DNDEBUG -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -Wall -Wextra -pedantic -Werror -m64 -std=c++14 -o CMakeFiles/main.dir/RelWithDebInfo/src/main.cpp.o -c /Users/aliabdulkareem/dev/Game/src/main.cpp",
+  "file": "/Users/aliabdulkareem/dev/Game/src/main.cpp"
+}
+]

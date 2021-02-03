@@ -1,0 +1,41 @@
+{
+	"build_systems":
+	[
+		{
+			"cmd":
+			[
+				"cmake --build build --config debug && ./bin/debug/main"
+			],
+			"name": "Debug",
+			"selector": "source.c++",
+			"shell": true,
+			"working_dir": "${project_path}"
+		},
+		{
+			"cmd":
+			[
+				"cmake --build build --config release && ./bin/release/main"
+			],
+			"name": "Release",
+			"selector": "source.c++",
+			"shell": true,
+			"working_dir": "${project_path}"
+		}
+	],
+	"folders":
+	[
+		{
+			"path": "bin/.."
+		}
+	],
+	"settings":
+	{
+		"LSP":
+		{
+			"clangd":
+			{
+				"enabled": true
+			}
+		}
+	}
+}

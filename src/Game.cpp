@@ -16,11 +16,17 @@ const int SCREEN_HEIGHT = 480;
 
 Game::Game()
 {
+    //----------------------------- TEXTURE MANAGER CREATION -------------------//
+    //------------Without initialising it, the map will be not created, giving seg. fault ---//
+
+    //texture_manager = TextureManager::instace();
 }
 
 Game::~Game()
 {
 }
+
+//----------------------------- TEXTURE MANAGER CREATION -------------------//
 
 //------------------Init SDL and Our Game Core ----------------------------//
 // ------------------------------------------------------------------------//
@@ -31,13 +37,11 @@ bool Game::init()
     bool success = true;
 
     //Frame Init
-    m_frameLocationX = m_frameWidth;
-    m_frameLocationY = m_frameHeight;
+    // m_frameLocationX = m_frameWidth;
+    // m_frameLocationY = m_frameHeight;
 
-    m_srcRect.w = m_desRect.w = m_frameLocationX;
-    m_srcRect.h = m_desRect.h = m_frameLocationY;
-
-    printf("current frame between [%d , %d] \n", m_srcRect.x, m_srcRect.w);
+    // m_srcRect.w = m_desRect.w = m_frameLocationX;
+    // m_srcRect.h = m_desRect.h = m_frameLocationY;
 
     if (SDL_Init(SDL_INIT_VIDEO != 0))
     {
@@ -55,9 +59,9 @@ bool Game::init()
         else
         {
             g_Renderer = SDL_CreateRenderer(g_Window, -1, 0);
-            if (!loadMedia())
+            if (!TextureManager::instance().load("../../res/Run.png", "Run", g_Renderer))
             {
-                printf("ERROR MeDIA WAS NOT LOADED\n");
+                printf("ERROR texture_manager failed to load image\n");
                 success = false;
             }
         }
@@ -68,50 +72,51 @@ bool Game::init()
 //------------------Load the Surface and return it ------------------------//
 // ------------------------------------------------------------------------//
 
-SDL_Surface* Game::loadSurface(std::string const& path)
-{
+// SDL_Surface* Game::loadSurface(std::string const& path)
+// {
 
-    SDL_Surface* loadedSurface = IMG_Load(path.c_str());
-    if (loadedSurface == NULL)
-        printf("Error loading sufrace%s \n", SDL_GetError());
+//     SDL_Surface* loadedSurface = IMG_Load(path.c_str());
+//     if (loadedSurface == NULL)
+//         printf("Error loading sufrace%s \n", SDL_GetError());
 
-    return loadedSurface;
-}
+//     return loadedSurface;
+// }
 
 // ----------------------------------------------------------------------//
 //------------------Loading Files from PC to SDL ------------------------//
 
-bool Game::loadMedia()
-{
-    bool load = true;
-    g_Surface = loadSurface("../../res/Run.png");
-    if (g_Surface == NULL)
-    {
-        printf("Error couldn't load Surface\n");
-        load = false;
-    }
+// bool Game::loadMedia()
+// {
+//     bool load = true;
+//     g_Surface = loadSurface("../../res/Run.png");
+//     if (g_Surface == NULL)
+//     {
+//         printf("Error couldn't load Surface\n");
+//         load = false;
+//     }
 
-    g_Texture = SDL_CreateTextureFromSurface(g_Renderer, g_Surface);
-    if (g_Texture == NULL)
-    {
-        load = false;
-        printf("Could not Load texture from surface %s\n", SDL_GetError());
-    }
+//     g_Texture = SDL_CreateTextureFromSurface(g_Renderer, g_Surface);
+//     if (g_Texture == NULL)
+//     {
+//         load = false;
+//         printf("Could not Load texture from surface %s\n", SDL_GetError());
+//     }
 
-    //freeing the Surface as we created a texture and no longer need it
-    SDL_FreeSurface(g_Surface);
-    g_Surface = NULL;
-    return load;
-}
+//     //freeing the Surface as we created a texture and no longer need it
+//     SDL_FreeSurface(g_Surface);
+//     g_Surface = NULL;
+//     return load;
+// }
 
 void Game::render()
 {
 
     SDL_SetRenderDrawColor(g_Renderer, 0XFF, 0XFF, 0XFF, 0XFF);
-
     SDL_RenderClear(g_Renderer);
 
-    SDL_RenderCopy(g_Renderer, g_Texture, &m_srcRect, &m_desRect);
+    TextureManager::instance().drawFrame("Run", { 0, 120, m_frameWidth, m_frameHeight }, 1, m_currentFrame, g_Renderer);
+    TextureManager::instance().draw("Run", { 0, 0, m_frameWidth * 6, m_frameHeight }, g_Renderer);
+
     //SDL_RenderCopyEx(g_Renderer, g_Texture, &m_srcRect, &m_desRect, 0, 0, SDL_FLIP_HORIZONTAL);
 
     SDL_RenderPresent(g_Renderer);
@@ -120,7 +125,9 @@ void Game::render()
 void Game::clean()
 {
     // The order is important, it is the reverse order of creation
-    SDL_DestroyTexture(g_Texture);
+
+    //SDL_DestroyTexture(g_Texture);
+    TextureManager::instance().textureClean();
     SDL_DestroyRenderer(g_Renderer);
     SDL_DestroyWindow(g_Window);
 
@@ -132,9 +139,7 @@ void Game::clean()
         printf("Error before quiting %s\n", SDL_GetError());
     SDL_Quit();
 }
-
 void Game::update()
 {
-    m_frameLocationX = m_frameWidth * int((SDL_GetTicks() / 96) % 6);
-    m_srcRect.x      = m_frameLocationX;
+    m_currentFrame = int((SDL_GetTicks() / 100) % 6);
 }

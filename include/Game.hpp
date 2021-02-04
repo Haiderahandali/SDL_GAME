@@ -3,6 +3,7 @@
 #include "SDL2/SDL_surface.h"
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_image.h>
+#include <TextureManager.hpp>
 #include <cstddef>
 #include <stdio.h>
 #include <string>
@@ -36,13 +37,14 @@ private:
 
     //----------- SDL-Rect-------//
 
-    SDL_Rect m_desRect { 0, 0, 0, 0 };
-    SDL_Rect m_srcRect { 0, 0, 0, 0 };
+    // SDL_Rect m_desRect { 0, 0, 0, 0 };
+    // SDL_Rect m_srcRect { 0, 0, 0, 0 };
 
     const int m_frameWidth  = 82;
     const int m_frameHeight = 100;
+    int m_currentFrame      = 0;
 
-    int m_frameLocationX = 0;
-    int m_frameLocationY = 0;
+    // int m_frameLocationX = 0;
+    // int m_frameLocationY = 0;
 };
 #endif

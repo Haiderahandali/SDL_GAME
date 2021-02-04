@@ -8,7 +8,8 @@ include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)
 add_compile_options(-Wall -Wextra -pedantic -Werror -m64 -std=c++14)
 add_executable(main 
 	src/main.cpp
-	src/Game.cpp)
+	src/Game.cpp
+	src/TextureManager.cpp)
 
 
 #finding the libraries 

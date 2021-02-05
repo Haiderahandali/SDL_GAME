@@ -12,7 +12,8 @@ add_executable(main
 	src/TextureManager.cpp
 	src/Player.cpp
 	src/GameObject.cpp
-	src/Enemy.cpp)
+	src/Enemy.cpp
+	src/Vector.cpp)
 
 
 #finding the libraries 

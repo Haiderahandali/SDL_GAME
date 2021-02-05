@@ -1,3 +1,6 @@
+#include "Enemy.hpp"
+#include "GameObject.hpp"
+#include "Player.hpp"
 #include "SDL2/SDL_rect.h"
 #include "SDL2/SDL_render.h"
 #include "SDL2/SDL_surface.h"
@@ -5,8 +8,10 @@
 #include <SDL2/SDL_image.h>
 #include <TextureManager.hpp>
 #include <cstddef>
+#include <memory>
 #include <stdio.h>
 #include <string>
+#include <vector>
 #ifndef GAME_H
 #define GAME_H
 
@@ -21,11 +26,12 @@ public:
     //---------------//
     bool init();
     bool loadMedia();
+    bool isRunning() { return running; }
 
     //---------------//
     void render();
     void update();
-    void handleEvents() { }
+    void handleEvents();
     void clean();
 
 private:
@@ -44,6 +50,13 @@ private:
     const int m_frameHeight = 100;
     int m_currentFrame      = 0;
 
+    //--------------------------------//
+    std::unique_ptr<GameObject> m_go;
+    std::unique_ptr<Player> m_player;
+    std::unique_ptr<Enemy> m_enemy;
+
+    std::vector<std::unique_ptr<GameObject>> gObjects;
+    bool running = true;
     // int m_frameLocationX = 0;
     // int m_frameLocationY = 0;
 };

@@ -17,24 +17,14 @@ int main(int argc, char const* argv[])
     //--------------------------------------BEGIN GAME LOOP-------------------------------------//
     //--------------------------------------BEGIN GAME LOOP ------------------------------------//
 
-    bool quit = false;
-
-    while (!quit)
+    while (game->isRunning())
     {
-        SDL_Event e;
-        while (SDL_PollEvent(&e))
-        {
-            switch (e.type)
-            {
-            case SDL_QUIT:
-                quit = true;
-                break;
-            default:
-                break;
-            }
-        }
+
+        game->handleEvents();
         game->render();
+
         game->update();
+        SDL_Delay(10);
     }
 
     //-----------------------------------------END OF GAME LOOP ---------------------------------------//

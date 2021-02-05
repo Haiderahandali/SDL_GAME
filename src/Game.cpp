@@ -9,6 +9,8 @@
 #include <cstddef>
 #include <cstdio>
 #include <cstring>
+#include <memory>
+#include <vector>
 
 //-----------------//
 const int SCREEN_WIDTH  = 640;
@@ -35,6 +37,19 @@ bool Game::init()
 {
 
     bool success = true;
+
+    m_go     = std::make_unique<GameObject>();
+    m_player = std::make_unique<Player>();
+    m_enemy  = std::make_unique<Enemy>();
+    m_go->load({ 100, 100, 82, 100 }, "Run");
+    m_player->load({ 300, 300, 82, 100 }, "Run");
+    m_enemy->load({ 0, 0, 82, 100 }, "Run");
+
+    gObjects.reserve(3);
+
+    //gObjects.emplace_back(std::move(m_go));
+    //gObjects.emplace_back(std::move(m_player));
+    gObjects.emplace_back(std::move(m_enemy));
 
     //Frame Init
     // m_frameLocationX = m_frameWidth;
@@ -114,8 +129,13 @@ void Game::render()
     SDL_SetRenderDrawColor(g_Renderer, 0XFF, 0XFF, 0XFF, 0XFF);
     SDL_RenderClear(g_Renderer);
 
-    TextureManager::instance().drawFrame("Run", { 0, 120, m_frameWidth, m_frameHeight }, 1, m_currentFrame, g_Renderer);
-    TextureManager::instance().draw("Run", { 0, 0, m_frameWidth * 6, m_frameHeight }, g_Renderer);
+    //   TextureManager::instance().drawFrame("Run", { 0, 120, m_frameWidth, m_frameHeight }, 1, m_currentFrame, g_Renderer);
+    // TextureManager::instance().draw("Run", { 0, 0, m_frameWidth * 6, m_frameHeight }, g_Renderer);
+
+    for (auto& g : gObjects)
+    {
+        g->draw(g_Renderer);
+    }
 
     //SDL_RenderCopyEx(g_Renderer, g_Texture, &m_srcRect, &m_desRect, 0, 0, SDL_FLIP_HORIZONTAL);
 
@@ -141,5 +161,23 @@ void Game::clean()
 }
 void Game::update()
 {
-    m_currentFrame = int((SDL_GetTicks() / 100) % 6);
+    //m_currentFrame = int((SDL_GetTicks() / 100) % 6);
+    for (auto& g : gObjects)
+
+        g->update();
+}
+void Game::handleEvents()
+{
+    SDL_Event e;
+    while (SDL_PollEvent(&e))
+    {
+        switch (e.type)
+        {
+        case SDL_QUIT:
+            running = false;
+            break;
+        default:
+            break;
+        }
+    }
 }

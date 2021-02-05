@@ -9,7 +9,10 @@ add_compile_options(-Wall -Wextra -pedantic -Werror -m64 -std=c++14)
 add_executable(main 
 	src/main.cpp
 	src/Game.cpp
-	src/TextureManager.cpp)
+	src/TextureManager.cpp
+	src/Player.cpp
+	src/GameObject.cpp
+	src/Enemy.cpp)
 
 
 #finding the libraries 

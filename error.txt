@@ -1,0 +1,50 @@
+[1/2] Building CXX object CMakeFiles/main.dir/Debug/src/Game.cpp.o
+FAILED: CMakeFiles/main.dir/Debug/src/Game.cpp.o 
+/Library/Developer/CommandLineTools/usr/bin/c++ -DCMAKE_INTDIR=\"Debug\" -I/usr/local/include -I../include -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -Wall -Wextra -pedantic -Werror -m64 -std=c++17 -MD -MT CMakeFiles/main.dir/Debug/src/Game.cpp.o -MF CMakeFiles/main.dir/Debug/src/Game.cpp.o.d -o CMakeFiles/main.dir/Debug/src/Game.cpp.o -c ../src/Game.cpp
+In file included from ../src/Game.cpp:1:
+In file included from ../include/Game.hpp:1:
+In file included from ../include/Enemy.hpp:1:
+In file included from ../include/GameObject.hpp:3:
+In file included from ../include/TextureManager.hpp:5:
+In file included from /Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/iostream:37:
+In file included from /Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/ios:215:
+In file included from /Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/__locale:14:
+In file included from /Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/string:504:
+In file included from /Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/string_view:175:
+In file included from /Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/__string:57:
+In file included from /Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/algorithm:643:
+/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/memory:2368:5: error: delete called on 'GameObject' that is abstract but has non-virtual destructor [-Werror,-Wdelete-abstract-non-virtual-dtor]
+    delete __ptr;
+    ^
+/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/memory:2623:7: note: in instantiation of member function 'std::__1::default_delete<GameObject>::operator()' requested here
+      __ptr_.second()(__tmp);
+      ^
+/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/memory:2577:19: note: in instantiation of member function 'std::__1::unique_ptr<GameObject, std::__1::default_delete<GameObject> >::reset' requested here
+  ~unique_ptr() { reset(); }
+                  ^
+/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/memory:1936:64: note: in instantiation of member function 'std::__1::unique_ptr<GameObject, std::__1::default_delete<GameObject> >::~unique_ptr' requested here
+    _LIBCPP_INLINE_VISIBILITY void destroy(pointer __p) {__p->~_Tp();}
+                                                               ^
+/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/memory:1798:18: note: in instantiation of member function 'std::__1::allocator<std::__1::unique_ptr<GameObject, std::__1::default_delete<GameObject> > >::destroy' requested here
+            {__a.destroy(__p);}
+                 ^
+/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/memory:1635:14: note: in instantiation of function template specialization 'std::__1::allocator_traits<std::__1::allocator<std::__1::unique_ptr<GameObject, std::__1::default_delete<GameObject> > > >::__destroy<std::__1::unique_ptr<GameObject, std::__1::default_delete<GameObject> > >' requested here
+            {__destroy(__has_destroy<allocator_type, _Tp*>(), __a, __p);}
+             ^
+/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/vector:426:25: note: in instantiation of function template specialization 'std::__1::allocator_traits<std::__1::allocator<std::__1::unique_ptr<GameObject, std::__1::default_delete<GameObject> > > >::destroy<std::__1::unique_ptr<GameObject, std::__1::default_delete<GameObject> > >' requested here
+        __alloc_traits::destroy(__alloc(), _VSTD::__to_address(--__soon_to_be_end));
+                        ^
+/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/vector:369:29: note: in instantiation of member function 'std::__1::__vector_base<std::__1::unique_ptr<GameObject, std::__1::default_delete<GameObject> >, std::__1::allocator<std::__1::unique_ptr<GameObject, std::__1::default_delete<GameObject> > > >::__destruct_at_end' requested here
+    void clear() _NOEXCEPT {__destruct_at_end(__begin_);}
+                            ^
+/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/vector:463:9: note: in instantiation of member function 'std::__1::__vector_base<std::__1::unique_ptr<GameObject, std::__1::default_delete<GameObject> >, std::__1::allocator<std::__1::unique_ptr<GameObject, std::__1::default_delete<GameObject> > > >::clear' requested here
+        clear();
+        ^
+/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/vector:495:5: note: in instantiation of member function 'std::__1::__vector_base<std::__1::unique_ptr<GameObject, std::__1::default_delete<GameObject> >, std::__1::allocator<std::__1::unique_ptr<GameObject, std::__1::default_delete<GameObject> > > >::~__vector_base' requested here
+    vector() _NOEXCEPT_(is_nothrow_default_constructible<allocator_type>::value)
+    ^
+../src/Game.cpp:10:7: note: in instantiation of member function 'std::__1::vector<std::__1::unique_ptr<GameObject, std::__1::default_delete<GameObject> >, std::__1::allocator<std::__1::unique_ptr<GameObject, std::__1::default_delete<GameObject> > > >::vector' requested here
+Game::Game()
+      ^
+1 error generated.
+ninja: build stopped: subcommand failed.

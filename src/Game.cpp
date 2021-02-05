@@ -1,16 +1,8 @@
 #include "Game.hpp"
-#include "SDL2/SDL.h"
-#include "SDL2/SDL_error.h"
-#include "SDL2/SDL_image.h"
-#include "SDL2/SDL_render.h"
-#include "SDL2/SDL_surface.h"
+#include "SDL2/SDL_rect.h"
 #include "SDL2/SDL_timer.h"
-#include "SDL2/SDL_video.h"
-#include <cstddef>
-#include <cstdio>
-#include <cstring>
+#include "Vendors.hpp"
 #include <memory>
-#include <vector>
 
 //-----------------//
 const int SCREEN_WIDTH  = 640;
@@ -18,6 +10,7 @@ const int SCREEN_HEIGHT = 480;
 
 Game::Game()
 {
+
     //----------------------------- TEXTURE MANAGER CREATION -------------------//
     //------------Without initialising it, the map will be not created, giving seg. fault ---//
 
@@ -38,17 +31,13 @@ bool Game::init()
 
     bool success = true;
 
-    m_player = new Player(new LoadParams({ 300, 300, 82, 100 }, "Run"));
-    m_enemy  = new Enemy(new LoadParams({ 0, 0, 82, 100 }, "Run"));
-    // m_go->load({ 100, 100, 82, 100 }, "Run");
-    // m_player->load({ 300, 300, 82, 100 }, "Run");
-    // m_enemy->load({ 0, 0, 82, 100 }, "Run");
+    auto loadP = std::make_unique<LoadParams>(SDL_Rect { 300, 300, 82, 100 }, "Run");
+    auto loadE = std::make_unique<LoadParams>(SDL_Rect { 0, 0, 82, 100 }, "Run");
+    m_player   = std::make_unique<Player>(std::move(loadP.get()));
+    m_enemy    = std::make_unique<Enemy>(std::move(loadE.get()));
 
-    gObjects.reserve(3);
-
-    //gObjects.emplace_back(std::move(m_go));
-    gObjects.emplace_back(std::move(m_player));
-    gObjects.emplace_back(std::move(m_enemy));
+    gObjects.emplace_back(std::move(m_player.get()));
+    gObjects.emplace_back(std::move(m_enemy.get()));
 
     //Frame Init
     // m_frameLocationX = m_frameWidth;
@@ -80,6 +69,7 @@ bool Game::init()
             }
         }
     }
+    time = SDL_GetTicks();
     return success;
 }
 

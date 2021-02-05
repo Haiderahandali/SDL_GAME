@@ -33,8 +33,7 @@ public:
     bool loadMedia();
     bool isRunning()
     {
-        ;
-        return running && (SDL_GetTicks() - time < 2000);
+        return running;
     }
 
     //---------------//
@@ -43,9 +42,10 @@ public:
     void handleEvents();
     void clean();
 
-    SDL_Renderer* getRenderer() const {
-        return g_Renderer; }
-
+    SDL_Renderer* getRenderer() const
+    {
+        return g_Renderer;
+    }
 
 private:
     Game();
@@ -70,7 +70,6 @@ private:
     int m_currentFrame      = 0;
 
     //--------------------------------//
-    double time;
     bool running = true;
     // int m_frameLocationX = 0;
     // int m_frameLocationY = 0;

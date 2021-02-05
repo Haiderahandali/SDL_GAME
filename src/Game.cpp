@@ -66,7 +66,6 @@ bool Game::init()
             }
         }
     }
-    time = SDL_GetTicks();
     return success;
 }
 
@@ -123,7 +122,6 @@ void Game::render()
 
         g->draw();
     }
-
 
     //SDL_RenderCopyEx(g_Renderer, g_Texture, &m_srcRect, &m_desRect, 0, 0, SDL_FLIP_HORIZONTAL);
 

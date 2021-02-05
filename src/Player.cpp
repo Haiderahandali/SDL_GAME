@@ -8,5 +8,5 @@ Player::Player(const LoadParams* lParam)
 
 void Player::update()
 {
-    rect.x -= 1;
+    position.xPos -= 1;
 }

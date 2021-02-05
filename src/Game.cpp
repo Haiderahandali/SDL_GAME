@@ -1,16 +1,5 @@
 #include "Game.hpp"
-#include "SDL2/SDL.h"
-#include "SDL2/SDL_error.h"
-#include "SDL2/SDL_image.h"
-#include "SDL2/SDL_render.h"
-#include "SDL2/SDL_surface.h"
-#include "SDL2/SDL_timer.h"
-#include "SDL2/SDL_video.h"
-#include <cstddef>
-#include <cstdio>
-#include <cstring>
-#include <memory>
-#include <vector>
+#include "Vendors.hpp"
 
 //-----------------//
 const int SCREEN_WIDTH  = 640;
@@ -79,6 +68,8 @@ bool Game::init()
                 success = false;
             }
         }
+        if (strcmp(SDL_GetError(), ""))
+            printf("Error before init %s\n", SDL_GetError());
     }
     return success;
 }
@@ -127,7 +118,8 @@ void Game::render()
 
     SDL_SetRenderDrawColor(g_Renderer, 0XFF, 0XFF, 0XFF, 0XFF);
     SDL_RenderClear(g_Renderer);
-
+    if (strcmp(SDL_GetError(), ""))
+        printf("Error before render %s\n", SDL_GetError());
     //   TextureManager::instance().drawFrame("Run", { 0, 120, m_frameWidth, m_frameHeight }, 1, m_currentFrame, g_Renderer);
     // TextureManager::instance().draw("Run", { 0, 0, m_frameWidth * 6, m_frameHeight }, g_Renderer);
 
@@ -135,6 +127,7 @@ void Game::render()
     {
         g->draw();
     }
+
 
     //SDL_RenderCopyEx(g_Renderer, g_Texture, &m_srcRect, &m_desRect, 0, 0, SDL_FLIP_HORIZONTAL);
 
@@ -161,6 +154,8 @@ void Game::clean()
 void Game::update()
 {
     //m_currentFrame = int((SDL_GetTicks() / 100) % 6);
+    if (strcmp(SDL_GetError(), ""))
+        printf("Error before update %s\n", SDL_GetError());
     for (auto& g : gObjects)
 
         g->update();

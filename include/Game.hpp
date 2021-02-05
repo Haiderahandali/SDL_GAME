@@ -37,7 +37,9 @@ public:
     void handleEvents();
     void clean();
 
-    SDL_Renderer* getRenderer() const { return g_Renderer; }
+    SDL_Renderer* getRenderer() const {
+        return g_Renderer; }
+
 
 private:
     Game();

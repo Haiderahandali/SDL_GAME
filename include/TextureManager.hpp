@@ -21,7 +21,9 @@ public:
     static TextureManager& instance()
     {
         static TextureManager singleton;
+
         return singleton;
+
     }
 
     //--------- Deleting the consturctor and the assignment operator to make it a singleton ---------//

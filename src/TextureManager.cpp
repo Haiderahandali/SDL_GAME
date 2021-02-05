@@ -66,7 +66,6 @@ void TextureManager::drawFrame(std::string textureID, SDL_Rect pos, int currentR
 
     srcRect.w = desRect.w = pos.w;
     srcRect.h = desRect.h = pos.h;
-
     srcRect.x = pos.w * currentFrame;
     srcRect.y = pos.h * (currentRow - 1);
 

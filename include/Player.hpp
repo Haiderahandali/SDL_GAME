@@ -2,11 +2,11 @@
 #include <string>
 #ifndef PLAYER_H
 #define PLAYER_H
-class Player final : public GameObject
+class Player final : public SDLgameObject
 {
 
 public:
-    virtual void load(SDL_Rect Rect, std::string textureID) override;
+    Player(const LoadParams* lParam);
     virtual void update() override;
 };
 

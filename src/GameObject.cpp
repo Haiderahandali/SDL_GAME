@@ -1,28 +1,22 @@
 #include "GameObject.hpp"
+#include "Game.hpp"
 #include <cstdio>
 
-GameObject::GameObject()
+void SDLgameObject::draw()
 {
+    TextureManager::instance().drawFrame(m_textureID, rect, m_currentRow, m_currentFrame, Game::instance().getRenderer());
 }
-void GameObject::load(SDL_Rect rect, std::string textureID)
-{
 
-    m_SDLRect.x    = rect.x;
-    m_SDLRect.y    = rect.y;
-    m_SDLRect.w    = rect.w;
-    m_SDLRect.h    = rect.h;
-    m_textureID    = textureID;
+SDLgameObject::SDLgameObject(const LoadParams* lParam)
+    : rect { lParam->getRect() }
+    , m_textureID { lParam->getID() }
+{
+    m_currentFrame = 1;
     m_currentRow   = 1;
-    m_currentFrame = 0;
 }
 
-void GameObject::draw(SDL_Renderer* g_Renderer)
+LoadParams::LoadParams(SDL_Rect rect, std::string textureID)
+    : rect { rect }
+    , textureID { textureID }
 {
-    TextureManager::instance().drawFrame(m_textureID, m_SDLRect,
-        m_currentRow, m_currentFrame, g_Renderer);
-}
-
-void GameObject::update()
-{
-    m_SDLRect.x += 1;
 }

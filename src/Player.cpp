@@ -1,12 +1,12 @@
 #include "Player.hpp"
 
-void Player::load(SDL_Rect Rect, std::string textureID)
+Player::Player(const LoadParams* lParam)
+    : SDLgameObject(lParam)
 {
-    GameObject::load(Rect, textureID);
-    m_currentFrame = 3;
+    m_currentFrame = 5;
 }
 
 void Player::update()
 {
-    m_SDLRect.x -= 1;
+    rect.x -= 1;
 }

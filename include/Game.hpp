@@ -18,11 +18,14 @@
 class Game
 {
 public:
-    Game();
     ~Game();
 
     SDL_Surface* loadSurface(std::string const& path);
-
+    static Game& instance()
+    {
+        static Game singleton;
+        return singleton;
+    }
     //---------------//
     bool init();
     bool loadMedia();
@@ -34,7 +37,10 @@ public:
     void handleEvents();
     void clean();
 
+    SDL_Renderer* getRenderer() const { return g_Renderer; }
+
 private:
+    Game();
     //------------------ SDL Window, Renderer, Surface and Texture -----------------------//
     SDL_Renderer* g_Renderer = NULL;
     SDL_Surface* g_Surface   = NULL;
@@ -51,11 +57,11 @@ private:
     int m_currentFrame      = 0;
 
     //--------------------------------//
-    std::unique_ptr<GameObject> m_go;
-    std::unique_ptr<Player> m_player;
-    std::unique_ptr<Enemy> m_enemy;
 
-    std::vector<std::unique_ptr<GameObject>> gObjects;
+    Player* m_player;
+    Enemy* m_enemy;
+
+    std::vector<GameObject*> gObjects;
     bool running = true;
     // int m_frameLocationX = 0;
     // int m_frameLocationY = 0;

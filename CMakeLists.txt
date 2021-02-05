@@ -5,7 +5,7 @@ project(GAME)
 
 include_directories(/usr/local/include)
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)
-add_compile_options(-Wall -Wextra -pedantic -Werror -m64 -std=c++14)
+add_compile_options(-Wall -Wextra -pedantic -Werror -m64 -std=c++17)
 add_executable(main 
 	src/main.cpp
 	src/Game.cpp

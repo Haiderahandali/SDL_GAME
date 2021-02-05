@@ -5,10 +5,10 @@
 int main(int argc, char const* argv[])
 {
 
-    Game* game = new Game;
+    auto& game = Game::instance();
 
     // -------------- Initialiasation of the Game -----------------//
-    if (!game->init())
+    if (!game.init())
     {
         printf("ERROR Init %s%d\n", argv[1], argc);
         return -1;
@@ -17,13 +17,13 @@ int main(int argc, char const* argv[])
     //--------------------------------------BEGIN GAME LOOP-------------------------------------//
     //--------------------------------------BEGIN GAME LOOP ------------------------------------//
 
-    while (game->isRunning())
+    while (game.isRunning())
     {
 
-        game->handleEvents();
-        game->render();
+        game.handleEvents();
+        game.render();
 
-        game->update();
+        game.update();
         SDL_Delay(10);
     }
 
@@ -33,7 +33,7 @@ int main(int argc, char const* argv[])
     //--------------- Clean UP RESOURCES -------------------//
     //--------------- Clean UP RESOURCES -------------------//
 
-    game->clean();
+    game.clean();
 
     return 0;
 }

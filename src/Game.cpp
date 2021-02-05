@@ -38,17 +38,16 @@ bool Game::init()
 
     bool success = true;
 
-    m_go     = std::make_unique<GameObject>();
-    m_player = std::make_unique<Player>();
-    m_enemy  = std::make_unique<Enemy>();
-    m_go->load({ 100, 100, 82, 100 }, "Run");
-    m_player->load({ 300, 300, 82, 100 }, "Run");
-    m_enemy->load({ 0, 0, 82, 100 }, "Run");
+    m_player = new Player(new LoadParams({ 300, 300, 82, 100 }, "Run"));
+    m_enemy  = new Enemy(new LoadParams({ 0, 0, 82, 100 }, "Run"));
+    // m_go->load({ 100, 100, 82, 100 }, "Run");
+    // m_player->load({ 300, 300, 82, 100 }, "Run");
+    // m_enemy->load({ 0, 0, 82, 100 }, "Run");
 
     gObjects.reserve(3);
 
     //gObjects.emplace_back(std::move(m_go));
-    //gObjects.emplace_back(std::move(m_player));
+    gObjects.emplace_back(std::move(m_player));
     gObjects.emplace_back(std::move(m_enemy));
 
     //Frame Init
@@ -134,7 +133,7 @@ void Game::render()
 
     for (auto& g : gObjects)
     {
-        g->draw(g_Renderer);
+        g->draw();
     }
 
     //SDL_RenderCopyEx(g_Renderer, g_Texture, &m_srcRect, &m_desRect, 0, 0, SDL_FLIP_HORIZONTAL);

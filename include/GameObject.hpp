@@ -11,7 +11,7 @@ class LoadParams final
 public:
     LoadParams(SDL_Rect rect, std::string textureID);
 
-    ~LoadParams();
+    ~LoadParams() {};
     std::string getID() const { return textureID; }
     SDL_Rect getRect() const { return rect; }
     int getX() const { return rect.x; }
@@ -34,6 +34,7 @@ class GameObject
 public:
     virtual void update() = 0;
     virtual void draw()   = 0;
+    virtual ~GameObject() {};
 
 protected:
 };

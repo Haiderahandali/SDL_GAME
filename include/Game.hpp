@@ -4,10 +4,12 @@
 #include "SDL2/SDL_rect.h"
 #include "SDL2/SDL_render.h"
 #include "SDL2/SDL_surface.h"
+#include "SDL2/SDL_timer.h"
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_image.h>
 #include <TextureManager.hpp>
 #include <cstddef>
+#include <cstdio>
 #include <memory>
 #include <stdio.h>
 #include <string>
@@ -29,7 +31,11 @@ public:
     //---------------//
     bool init();
     bool loadMedia();
-    bool isRunning() { return running; }
+    bool isRunning()
+    {
+        ;
+        return running && (SDL_GetTicks() - time < 2000);
+    }
 
     //---------------//
     void render();
@@ -43,6 +49,11 @@ public:
 
 private:
     Game();
+
+    std::unique_ptr<Player> m_player;
+    std::unique_ptr<Enemy> m_enemy;
+
+    std::vector<std::unique_ptr<GameObject>> gObjects;
     //------------------ SDL Window, Renderer, Surface and Texture -----------------------//
     SDL_Renderer* g_Renderer = NULL;
     SDL_Surface* g_Surface   = NULL;
@@ -59,11 +70,7 @@ private:
     int m_currentFrame      = 0;
 
     //--------------------------------//
-
-    Player* m_player;
-    Enemy* m_enemy;
-
-    std::vector<GameObject*> gObjects;
+    double time;
     bool running = true;
     // int m_frameLocationX = 0;
     // int m_frameLocationY = 0;

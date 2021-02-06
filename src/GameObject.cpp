@@ -1,5 +1,6 @@
 #include "GameObject.hpp"
 #include "Game.hpp"
+#include "Vector.hpp"
 
 void SDLgameObject::draw()
 {
@@ -7,6 +8,7 @@ void SDLgameObject::draw()
 }
 
 SDLgameObject::SDLgameObject(const LoadParams* lParam)
+    : m_volicty { 0, 0 }
 
 {
     position.xPos  = lParam->getX();
@@ -22,4 +24,11 @@ LoadParams::LoadParams(SDL_Rect rect, std::string textureID)
     : rect { rect }
     , textureID { textureID }
 {
+}
+
+void SDLgameObject::update()
+{
+    //to change later
+    m_volicty += m_acceleration;
+    position += m_volicty;
 }

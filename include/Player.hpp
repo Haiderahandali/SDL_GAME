@@ -1,8 +1,9 @@
+#ifndef PLAYER_H
+#define PLAYER_H
 #include "GameObject.hpp"
 #include <memory>
 #include <string>
-#ifndef PLAYER_H
-#define PLAYER_H
+
 class Player final : public SDLgameObject
 {
 

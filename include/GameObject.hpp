@@ -1,9 +1,9 @@
+#ifndef GMAE_OBJECT_H
+#define GMAE_OBJECT_H
+
 #include "TextureManager.hpp"
 #include "Vector.hpp"
 #include "Vendors.hpp"
-
-#ifndef GMAE_OBJECT_H
-#define GMAE_OBJECT_H
 
 //--------------------- LOAD PARAMETERS CLASS ----------------//
 class LoadParams final
@@ -46,10 +46,12 @@ public:
     SDLgameObject(const LoadParams* lparam);
 
     virtual void draw();
-    virtual void update() { }
+    virtual void update();
 
 protected:
     Vector2d position;
+    Vector2d m_volicty;
+    Vector2d m_acceleration;
 
     std::string m_textureID;
     int frameWidth;

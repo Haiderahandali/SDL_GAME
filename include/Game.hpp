@@ -1,21 +1,15 @@
+#ifndef GAME_H
+#define GAME_H
+
 #include "Enemy.hpp"
 #include "GameObject.hpp"
 #include "Player.hpp"
-#include "SDL2/SDL_rect.h"
-#include "SDL2/SDL_render.h"
-#include "SDL2/SDL_surface.h"
-#include "SDL2/SDL_timer.h"
-#include <SDL2/SDL.h>
-#include <SDL2/SDL_image.h>
+#include "Vendors.hpp"
 #include <TextureManager.hpp>
-#include <cstddef>
-#include <cstdio>
-#include <memory>
-#include <stdio.h>
-#include <string>
-#include <vector>
-#ifndef GAME_H
-#define GAME_H
+
+const int FPS = 120;
+
+float const DELAY = 1000.0 / FPS;
 
 class Game
 {

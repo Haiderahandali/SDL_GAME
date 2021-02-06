@@ -12,6 +12,13 @@ Vector2d::Vector2d()
     yPos = 0;
 }
 
+Vector2d& Vector2d::operator=(Vector2d const& vec)
+{
+    this->xPos = vec.xPos;
+    this->yPos = vec.yPos;
+    return *this;
+}
+
 //---------------------------------- Public methods -------------------//
 //---------------------------------------------------------------------//
 

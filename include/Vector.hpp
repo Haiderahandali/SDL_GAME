@@ -21,10 +21,12 @@ public:
     void normalize();
 
     //-------------overloading --------------//
-    Vector2d&
-    operator=(Vector2d&)
-        = default;
+    Vector2d& operator=(Vector2d&);
+    Vector2d& operator=(Vector2d const&);
+
     friend std::ostream& operator<<(std::ostream& os, Vector2d const& vec);
 };
 
 #endif
+
+Vector2d& operator+=(Vector2d& vec, Vector2d const&);

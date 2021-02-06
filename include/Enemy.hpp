@@ -1,7 +1,7 @@
-#include "GameObject.hpp"
-#include "SDL2/SDL_rect.h"
 #ifndef ENEMY_H
 #define ENEMY_H
+#include "GameObject.hpp"
+
 class Enemy final : public SDLgameObject
 {
 public:

@@ -7,6 +7,7 @@ class Enemy final : public SDLgameObject
 public:
     Enemy(const LoadParams* lParam);
     virtual void update() override;
+    void inputHandler();
 };
 
 #endif

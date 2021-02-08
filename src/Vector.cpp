@@ -19,6 +19,16 @@ Vector2d& Vector2d::operator=(Vector2d const& vec)
     return *this;
 }
 
+void Vector2d::setX(float const& X)
+{
+    xPos = X;
+}
+
+void Vector2d::setY(const float& Y)
+{
+    yPos = Y;
+}
+
 //---------------------------------- Public methods -------------------//
 //---------------------------------------------------------------------//
 

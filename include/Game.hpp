@@ -1,8 +1,8 @@
 #ifndef GAME_H
 #define GAME_H
-
 #include "Enemy.hpp"
 #include "GameObject.hpp"
+#include "InputHandler.hpp"
 #include "Player.hpp"
 #include "Vendors.hpp"
 #include <TextureManager.hpp>
@@ -40,6 +40,7 @@ public:
     {
         return g_Renderer;
     }
+    void quit() { running = false; }
 
 private:
     Game();

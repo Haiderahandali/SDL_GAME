@@ -1,4 +1,5 @@
 #include "Game.hpp"
+#include "InputHandler.hpp"
 #include "Vendors.hpp"
 
 //-----------------//
@@ -28,12 +29,12 @@ bool Game::init()
 
     bool success = true;
 
-    auto loadP = std::make_unique<LoadParams>(SDL_Rect { 300, 300, 82, 100 }, "Run");
+    // auto loadP = std::make_unique<LoadParams>(SDL_Rect { 300, 300, 82, 100 }, "Run");
     auto loadE = std::make_unique<LoadParams>(SDL_Rect { 0, 0, 82, 100 }, "Run");
-    m_player   = std::make_unique<Player>(loadP.get());
-    m_enemy    = std::make_unique<Enemy>(loadE.get());
+    // m_player   = std::make_unique<Player>(loadP.get());
+    m_enemy = std::make_unique<Enemy>(loadE.get());
 
-    gObjects.emplace_back(std::move(m_player));
+    //gObjects.emplace_back(std::move(m_player));
     gObjects.emplace_back(std::move(m_enemy));
 
     //Frame Init
@@ -155,16 +156,5 @@ void Game::update()
 }
 void Game::handleEvents()
 {
-    SDL_Event e;
-    while (SDL_PollEvent(&e))
-    {
-        switch (e.type)
-        {
-        case SDL_QUIT:
-            running = false;
-            break;
-        default:
-            break;
-        }
-    }
+    InputHandler::instance().update();
 }

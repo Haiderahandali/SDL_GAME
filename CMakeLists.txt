@@ -13,7 +13,8 @@ add_executable(main
 	src/Player.cpp
 	src/GameObject.cpp
 	src/Enemy.cpp
-	src/Vector.cpp)
+	src/Vector.cpp
+	src/InputHandler.cpp)
 
 
 #finding the libraries 

@@ -14,6 +14,8 @@ public:
 
     //--------------------- function here -----------------//
 
+    void setX(float const& X);
+    void setY(float const& Y);
     float dot(Vector2d other) const;
     float length() const;
     float getX() const { return xPos; }

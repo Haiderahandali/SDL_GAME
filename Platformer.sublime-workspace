@@ -4,12 +4,332 @@
 		"selected_items":
 		[
 			[
-				"CMAKE_CURRENT",
-				"CMAKE_CURRENT_SOURCE_DIR\tbuiltin variable"
+				"im",
+				"imagePath\t  std::string"
 			],
 			[
 				"inc",
-				"include_directories\tbuiltin"
+				"include \"header\"\t  Snippet"
+			],
+			[
+				"m_",
+				"m_acceleration\t  Vector2d"
+			],
+			[
+				"vec",
+				"Vector2d\t  Struct"
+			],
+			[
+				"fram",
+				"frameWidth\t  int"
+			],
+			[
+				"g",
+				"getX() const\t  int"
+			],
+			[
+				"in",
+				"include <header>\t  Snippet"
+			],
+			[
+				"m_frame",
+				"m_frameWidth(int)\t  Field"
+			],
+			[
+				"SDL_get",
+				"SDL_GetTicks()\t  Uint32"
+			],
+			[
+				"uniqu",
+				"unique_ptr<class _Tp, class _Dp>\t  Class"
+			],
+			[
+				"get",
+				"get() const\t  pointer"
+			],
+			[
+				"unique",
+				"std::unique_ptr<class _Tp, class _Dp>\t  Class"
+			],
+			[
+				"m_cu",
+				"m_currentFrame\t  int"
+			],
+			[
+				"SDLgame",
+				"SDLgameObject(const std::unique_ptr<LoadParams> lParam)\t  Class"
+			],
+			[
+				"SD",
+				"SDLgameObject\t  Class"
+			],
+			[
+				"emp",
+				"emplace_back(_Args &&__args...)\t  void"
+			],
+			[
+				"uniq",
+				"unique_ptr(…)\t  [9 overloads]"
+			],
+			[
+				"me",
+				"m_enemy\t  Enemy *"
+			],
+			[
+				"p",
+				"push_back(…)\t  [2 overloads]"
+			],
+			[
+				"Game",
+				"GameObject\t  Class"
+			],
+			[
+				"SDL_",
+				"SDL_Rect\t  Interface"
+			],
+			[
+				"m_c",
+				"m_currentFrame\t  int"
+			],
+			[
+				"incl",
+				"include \"header\"\t  Snippet"
+			],
+			[
+				"game",
+				"GameObject\t  Class"
+			],
+			[
+				"Gmae",
+				"GameObject.hpp\"\t  File"
+			],
+			[
+				"draw",
+				"draw(std::string textureID, SDL_Rect pos, SDL_Renderer *g_Renderer, SDL_RendererFlip flip = SDL_FLIP_NONE)\t  void"
+			],
+			[
+				"SDL_re",
+				"SDL_Rect\t  Struct"
+			],
+			[
+				"SDL_Render",
+				"SDL_Renderer\t  Struct"
+			],
+			[
+				"de",
+				"default\t  Keyword"
+			],
+			[
+				"defin",
+				"define macro\t  Snippet"
+			],
+			[
+				"update",
+				"updateFrameNumber(const int &framesSpeed, const int &framesCount)\t  int"
+			],
+			[
+				"upda",
+				"updateFrameNumber(const int &frameWdith, const int &framesSpeed, const int &framesCount)\t  int"
+			],
+			[
+				"m_fra",
+				"m_frameWidth\t  const int"
+			],
+			[
+				"upd",
+				"updateFrameNumber(const int &frameWdith, const int &framesSpeed, const int &framesCount)\t  int"
+			],
+			[
+				"frame",
+				"frameWdith\t  int"
+			],
+			[
+				"frames",
+				"framesSpeed\t  int"
+			],
+			[
+				"SDL_Flip",
+				"SDL_FLIP_NONE\t  SDL_RendererFlip"
+			],
+			[
+				"SDL_flip",
+				"SDL_FLIP_NONE\t  SDL_RendererFlip"
+			],
+			[
+				"tex",
+				"texture_manager"
+			],
+			[
+				"SDL_renderCopy",
+				"SDL_RenderCopyEx(SDL_Renderer *renderer, SDL_Texture *texture, const SDL_Rect *srcrect, const SDL_Rect *dstrect, const double angle, const SDL_Point *center, const SDL_RendererFlip flip)\t  int"
+			],
+			[
+				"curre",
+				"currentRow\t  int"
+			],
+			[
+				"dra",
+				"drawFrame(std::string textureID, SDL_Rect pos, int currentRow, int currentFrame, SDL_Renderer g_Renderer, SDL_RendererFlip flip)\t  void"
+			],
+			[
+				"SDL_redne",
+				"SDL_RendererFlip\t  Interface"
+			],
+			[
+				"SDL_RenderCopy",
+				"SDL_RenderCopyEx(SDL_Renderer *renderer, SDL_Texture *texture, const SDL_Rect *srcrect, const SDL_Rect *dstrect, const double angle, const SDL_Point *center, const SDL_RendererFlip flip)\t  int"
+			],
+			[
+				"SDL_Re",
+				"SDL_Rect\t  Struct"
+			],
+			[
+				"SDL_RendererFL",
+				"SDL_RendererFlip\t  Interface"
+			],
+			[
+				"map",
+				"map>\t  File"
+			],
+			[
+				"SDL_FLIP",
+				"SDL_FLIP_NONE\t  SDL_RendererFlip"
+			],
+			[
+				"mframe",
+				"m_frameLocationX\t  int"
+			],
+			[
+				"m_fram",
+				"m_frameLocationX\t  int"
+			],
+			[
+				"SCREE",
+				"SCREEN_HEIGHT\t  const int"
+			],
+			[
+				"SCREEN",
+				"SCREEN_WIDTH\t  const int"
+			],
+			[
+				"SDL_quer",
+				"SDL_QueryTexture(SDL_Texture *texture, Uint32 *format, int *access, int *w, int *h)\t  int"
+			],
+			[
+				"SDL_key",
+				"SDL_Keysym\t  Interface"
+			],
+			[
+				"cl",
+				"clean()\t  void"
+			],
+			[
+				"g_",
+				"g_Renderer\t  SDL_Renderer *"
+			],
+			[
+				"SDL_createWindow",
+				"SDL_CreateWindow(const char *title, int x, int y, int w, int h, Uint32 flags)\t  SDL_Window *"
+			],
+			[
+				"load",
+				"loadSurface(std::string path)\t  SDL_Surface *"
+			],
+			[
+				"c",
+				"c_str() const\t  const value_type *"
+			],
+			[
+				"pri",
+				"private:\t  Snippet"
+			],
+			[
+				"SDL_Destro",
+				"SDL_DestroyRenderer(SDL_Renderer *renderer)\t  void"
+			],
+			[
+				"inl",
+				"include <header>\t  Snippet"
+			],
+			[
+				"opti",
+				"optimizedSurface"
+			],
+			[
+				"gsurface",
+				"gKeyPressSurfaces\t  SDL_Surface *[5]"
+			],
+			[
+				"SDL_GET",
+				"SDL_GetError()\t  const char *"
+			],
+			[
+				"KEY_pre",
+				"KEY_PRESSED_SURFACE_UP\t  KeyPressSurfaces"
+			],
+			[
+				"KEY",
+				"KEY_PRESSED_SURFACE_DEFAULT\t  KeyPressSurfaces"
+			],
+			[
+				"SDL_even",
+				"SDL_Event\t  Class"
+			],
+			[
+				"ios",
+				"iostream>\t  File"
+			],
+			[
+				"inclde",
+				"include <header>\t  Snippet"
+			],
+			[
+				"Gwin",
+				"gWindowImage\t  SDL_Surface *"
+			],
+			[
+				"inti",
+				"Initialising"
+			],
+			[
+				"gwindow",
+				"gWindowImage\t  SDL_Surface *"
+			],
+			[
+				"gwi",
+				"gWindowImage\t  SDL_Surface *"
+			],
+			[
+				"gi",
+				"gWindowImage\t  SDL_Surface *"
+			],
+			[
+				"SDL_Destory",
+				"SDL_DestroyWindow(SDL_Window *window)\t  void"
+			],
+			[
+				"Wind",
+				"window\t  SDL_Window *"
+			],
+			[
+				"S",
+				"SCREEN_HEIGHT\t  const int"
+			],
+			[
+				"SDL_CreateWindow",
+				"SDL_CreateWindow(const char *title, int x, int y, int w, int h, Uint32 flags)\t  SDL_Window *"
+			],
+			[
+				"arg",
+				"argv\t  char **"
+			],
+			[
+				"SDL2_",
+				"SLD2_ttf"
+			],
+			[
+				"CMAKE_CURRENT",
+				"CMAKE_CURRENT_SOURCE_DIR\tbuiltin variable"
 			],
 			[
 				"IMG_init",
@@ -34,10 +354,6 @@
 			[
 				"cmake",
 				"cmake_minimum_required"
-			],
-			[
-				"in",
-				"index\t  int"
 			],
 			[
 				"str",
@@ -81,7 +397,7 @@
 			]
 		]
 	},
-	"build_system": "Release",
+	"build_system": "Debug",
 	"build_system_choices":
 	[
 		[
@@ -112,7 +428,7 @@
 				]
 			],
 			[
-				"Release",
+				"Debug",
 				""
 			]
 		]
@@ -125,12 +441,60 @@
 		"selected_items":
 		[
 			[
-				"install",
-				"Package Control: Install Package"
+				"restart",
+				"LSP: Restart Servers"
+			],
+			[
+				"ter",
+				"Terminus: Close All"
+			],
+			[
+				"term",
+				"Terminus: Toggle Panel"
+			],
+			[
+				"theme",
+				"UI: Select Color Scheme"
+			],
+			[
+				"cmake",
+				"Set Syntax: CMake"
+			],
+			[
+				"pakcage",
+				"Package Control: Enable Package"
 			],
 			[
 				"format",
 				"Clang Format: Format Selection"
+			],
+			[
+				"select style",
+				"Clang Format: Select Style"
+			],
+			[
+				"package resource",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"clnagfor",
+				"Clang Format: Select Style"
+			],
+			[
+				"",
+				"Clang Format: Format Selection"
+			],
+			[
+				"preferen",
+				"Preferences: Settings"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
 			],
 			[
 				"set theme",
@@ -189,16 +553,8 @@
 				"LSP: Disable Language Server Globally"
 			],
 			[
-				"cmake",
-				"Set Syntax: CMake"
-			],
-			[
 				"remove",
 				"Package Control: Remove Package"
-			],
-			[
-				"theme",
-				"UI: Select Theme"
 			],
 			[
 				"lsp settin",
@@ -207,10 +563,6 @@
 			[
 				"LSP",
 				"LSP: Enable Language Server Globally"
-			],
-			[
-				"term",
-				"Terminus: Toggle Panel"
 			],
 			[
 				"package",
@@ -237,9 +589,35 @@
 	},
 	"file_history":
 	[
-		"/Users/aliabdulkareem/dev/Game/src/main.cpp",
-		"/Users/aliabdulkareem/dev/Game/Platformer.sublime-project",
+		"/Users/aliabdulkareem/dev/Game/src/Game.cpp",
 		"/Users/aliabdulkareem/dev/Game/CMakeLists.txt",
+		"/Users/aliabdulkareem/dev/Game/src/TextureManager.cpp",
+		"/Users/aliabdulkareem/dev/Game/src/Vector.cpp",
+		"/Users/aliabdulkareem/dev/Game/src/Enemy.cpp",
+		"/Users/aliabdulkareem/dev/Game/src/Player.cpp",
+		"/Users/aliabdulkareem/dev/Game/src/GameObject.cpp",
+		"/Users/aliabdulkareem/dev/Game/include/TextureManager.hpp",
+		"/Users/aliabdulkareem/dev/Game/include/Game.hpp",
+		"/Users/aliabdulkareem/dev/Game/include/GameObject.hpp",
+		"/Users/aliabdulkareem/dev/Game/include/Enemy.hpp",
+		"/Users/aliabdulkareem/dev/Game/include/Vector.hpp",
+		"/Users/aliabdulkareem/dev/Game/.cache/clangd/index/TextureManager.hpp.5F3E6C8B55BC718B.idx",
+		"/Users/aliabdulkareem/dev/Game/include/Player.hpp",
+		"/Users/aliabdulkareem/dev/Game/src/main.cpp",
+		"/Users/aliabdulkareem/dev/Game/include/Vendors.hpp",
+		"/Users/aliabdulkareem/dev/Game/Platformer.sublime-project",
+		"/Users/aliabdulkareem/dev/Game/src/fail.cpp",
+		"/Users/aliabdulkareem/dev/Game/include/Core.hpp",
+		"/Users/aliabdulkareem/dev/Game/src/GameObject.hpp",
+		"/Users/aliabdulkareem/dev/Game/.gitignore",
+		"/Users/aliabdulkareem/dev/Game/SDL_tutorials/Lesson_4_Loading_Multiple_images.cpp",
+		"/Users/aliabdulkareem/dev/Game/include/test.h",
+		"/Users/aliabdulkareem/dev/Game/src/test.cpp",
+		"/Users/aliabdulkareem/dev/Game/include/Game.h",
+		"/Users/aliabdulkareem/Downloads/04_key_presses/04_key_presses.cpp",
+		"/Users/aliabdulkareem/dev/Game/diff.txt",
+		"/Users/aliabdulkareem/dev/Game/SDL_tutorials/lesson_2_load_image.cpp",
+		"/Users/aliabdulkareem/Library/Application Support/Sublime Text 3/Packages/User/clang_format.sublime-settings",
 		"/Users/aliabdulkareem/.zshrc",
 		"/Users/aliabdulkareem/dev/Game/Makefile",
 		"/Users/aliabdulkareem/Downloads/puzzles-20201208.84cb4c6/cube.c",
@@ -253,13 +631,14 @@
 	],
 	"find":
 	{
-		"height": 0.0
+		"height": 40.0
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 102.0,
 		"where_history":
 		[
+			""
 		]
 	},
 	"find_state":
@@ -267,6 +646,27 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"gScreen",
+			"time",
+			"m_pos",
+			"x",
+			"int",
+			"clean",
+			"GameObject::clean()",
+			"loadMedia",
+			"\"\n",
+			"x",
+			"w",
+			"y",
+			"w",
+			"0X00",
+			"res",
+			"run",
+			"load",
+			"loadsurface",
+			"key_pressed",
+			"gCurrentSurface",
+			"gScreenSurface"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -274,6 +674,9 @@
 		"regex": false,
 		"replace_history":
 		[
+			"position",
+			"gScreenSurface",
+			"gCurrentSurface"
 		],
 		"reverse": false,
 		"show_context": true,
@@ -283,11 +686,11 @@
 	},
 	"incremental_find":
 	{
-		"height": 0.0
+		"height": 24.0
 	},
 	"input":
 	{
-		"height": 37.0
+		"height": 38.0
 	},
 	"layout":
 	{
@@ -298,11 +701,18 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.5,
 			1.0
 		],
 		"rows":
@@ -314,24 +724,28 @@
 	"menu_visible": true,
 	"output.Terminus":
 	{
-		"height": 245.0
+		"height": 372.0
 	},
 	"output.diagnostics":
 	{
-		"height": 108.0
+		"height": 191.0
 	},
 	"output.exec":
 	{
-		"height": 294.0
+		"height": 315.0
 	},
 	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.mdpopups":
 	{
 		"height": 0.0
 	},
 	"pinned_build_system": "",
 	"replace":
 	{
-		"height": 0.0
+		"height": 71.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -340,6 +754,202 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"",
+				"CMakeLists.txt"
+			],
+			[
+				"game",
+				"src/Game.cpp"
+			],
+			[
+				"texture",
+				"include/TextureManager.hpp"
+			],
+			[
+				"hexture",
+				".cache/clangd/index/TextureManager.hpp.5F3E6C8B55BC718B.idx"
+			],
+			[
+				"vect",
+				"src/Vector.cpp"
+			],
+			[
+				"player.h",
+				"include/Player.hpp"
+			],
+			[
+				"hpp",
+				"include/Enemy.hpp"
+			],
+			[
+				"main",
+				"src/main.cpp"
+			],
+			[
+				"ene",
+				"src/Enemy.cpp"
+			],
+			[
+				"gmae",
+				"src/GameObject.cpp"
+			],
+			[
+				"gameob",
+				"include/GameObject.hpp"
+			],
+			[
+				"vec",
+				"include/Vector.hpp"
+			],
+			[
+				"gameobj",
+				"include/GameObject.hpp"
+			],
+			[
+				"gmaeob",
+				"include/GameObject.hpp"
+			],
+			[
+				"gmae.hp",
+				"include/Game.hpp"
+			],
+			[
+				"game.hp",
+				"include/Game.hpp"
+			],
+			[
+				"gmaeoh",
+				"include/GameObject.hpp"
+			],
+			[
+				" main.cp",
+				"src/main.cpp"
+			],
+			[
+				"game.",
+				"src/Game.cpp"
+			],
+			[
+				"player.c",
+				"src/Player.cpp"
+			],
+			[
+				"vendor",
+				"include/Vendors.hpp"
+			],
+			[
+				"ven",
+				"include/Vendors.hpp"
+			],
+			[
+				"gmaeobj",
+				"include/GameObject.hpp"
+			],
+			[
+				"cma",
+				"CMakeLists.txt"
+			],
+			[
+				"vecot",
+				"include/Vector.hpp"
+			],
+			[
+				"vector",
+				"include/Vector.hpp"
+			],
+			[
+				"cmake",
+				"CMakeLists.txt"
+			],
+			[
+				"gameobjc",
+				"src/GameObject.cpp"
+			],
+			[
+				"game.c",
+				"src/Game.cpp"
+			],
+			[
+				"main.c",
+				"src/main.cpp"
+			],
+			[
+				"gmae.h",
+				"include/Game.hpp"
+			],
+			[
+				"game.h",
+				"include/Game.hpp"
+			],
+			[
+				"core.",
+				"include/Core.hpp"
+			],
+			[
+				"player.",
+				"include/Player.hpp"
+			],
+			[
+				"texu",
+				"include/TextureManager.hpp"
+			],
+			[
+				"gmaeo",
+				"src/GameObject.cpp"
+			],
+			[
+				"plat",
+				"Platformer.sublime-project"
+			],
+			[
+				"pla",
+				"Platformer.sublime-project"
+			],
+			[
+				"CM",
+				"CMakeLists.txt"
+			],
+			[
+				"gmaej",
+				"include/GameObject.hpp"
+			],
+			[
+				"player",
+				"src/Player.cpp"
+			],
+			[
+				"gmae.",
+				"src/Game.cpp"
+			],
+			[
+				"cmak",
+				"CMakeLists.txt"
+			],
+			[
+				"main.cp",
+				"src/main.cpp"
+			],
+			[
+				"gmae.cp",
+				"src/Game.cpp"
+			],
+			[
+				"gma",
+				"src/Game.cpp"
+			],
+			[
+				"playr.",
+				"include/Player.hpp"
+			],
+			[
+				"ga",
+				"include/Game.hpp"
+			],
+			[
+				"gam",
+				"src/Game.cpp"
+			]
 		],
 		"width": 0.0
 	},
@@ -367,10 +977,11 @@
 	"show_minimap": false,
 	"show_open_files": false,
 	"show_tabs": true,
-	"side_bar_visible": true,
+	"side_bar_visible": false,
 	"side_bar_width": 229.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
+		"max_columns": 3
 	}
 }

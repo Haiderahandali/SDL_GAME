@@ -32,3 +32,30 @@ public:
 #endif
 
 Vector2d& operator+=(Vector2d& vec, Vector2d const&);
+Vector2d& operator+=(Vector2d& vec, float const&);
+Vector2d operator-(Vector2d const& vec, Vector2d const&);
+Vector2d operator-(Vector2d const& vec, float const&);
+Vector2d operator/(Vector2d const&, float const&);
+Vector2d& operator-=(Vector2d& vec, float const&);
+Vector2d& operator-=(Vector2d& vec, Vector2d const&);
+Vector2d const operator+(Vector2d const&, Vector2d const&);
+
+/* Vector2d
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        */

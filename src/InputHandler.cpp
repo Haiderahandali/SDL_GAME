@@ -39,6 +39,11 @@ void InputHandler::update()
             if (e.button.button == SDL_BUTTON_RIGHT)
                 m_mouseButtonStates[RIGHT] = false;
         }
+        if (e.type == SDL_MOUSEMOTION)
+        {
+            m_mousePosition.setX(e.motion.x);
+            m_mousePosition.setY(e.motion.y);
+        }
 
         if (e.type == SDL_QUIT)
         {

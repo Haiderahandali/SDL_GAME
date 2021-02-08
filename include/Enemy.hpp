@@ -8,6 +8,10 @@ public:
     Enemy(const LoadParams* lParam);
     virtual void update() override;
     void inputHandler();
+
+private:
+    Vector2d vec; //delete later it is
+    // just to test how the player should follow the mouse
 };
 
 #endif

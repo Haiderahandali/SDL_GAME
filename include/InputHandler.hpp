@@ -1,4 +1,5 @@
 #pragma once
+#include "Vector.hpp"
 #include <vector>
 
 enum mouse_buttons
@@ -21,10 +22,11 @@ public:
     }
 
     void update();
-
-    std::vector<bool> m_mouseButtonStates;
+    inline Vector2d const& getMousePosition() const { return m_mousePosition; }
 
 private:
+    Vector2d m_mousePosition;
+    std::vector<bool> m_mouseButtonStates;
     InputHandler();
     ~InputHandler();
 };

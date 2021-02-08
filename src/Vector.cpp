@@ -54,7 +54,7 @@ float Vector2d::length() const
 
 //--------------------------- Overloading Operator for Vector2D -------------------//
 //----------------------------- BEGIN ---------------------//
-Vector2d operator+(Vector2d const& vec2d, Vector2d const& other)
+Vector2d const operator+(Vector2d const& vec2d, Vector2d const& other)
 {
     return { vec2d.xPos + other.xPos, vec2d.yPos + other.yPos };
 }
@@ -64,9 +64,9 @@ Vector2d operator-(Vector2d const& vec2d, Vector2d const& other)
     return { vec2d.xPos - other.xPos, vec2d.yPos - other.yPos };
 }
 
-Vector2d operator-(Vector2d const& vec2d, float const other)
+Vector2d operator-(Vector2d const& vec, float const& other)
 {
-    return { vec2d.xPos - other, vec2d.yPos - other };
+    return { vec.xPos - other, vec.yPos - other };
 }
 
 Vector2d operator+(Vector2d const& vec2d, float const other)
@@ -84,7 +84,7 @@ Vector2d operator*(Vector2d const& vec2d, float other)
     return { vec2d.xPos * other, vec2d.yPos * other };
 }
 
-Vector2d operator/(Vector2d const& vec2d, float other)
+Vector2d operator/(Vector2d const& vec2d, float const& other)
 {
     return { vec2d.xPos / other, vec2d.yPos / other };
 }

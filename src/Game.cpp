@@ -51,7 +51,7 @@ bool Game::init()
     }
     else
     {
-        g_Window = SDL_CreateWindow("Hello SDL", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, SCREEN_WIDTH, SCREEN_HEIGHT, SDL_WINDOW_SHOWN);
+        g_Window = SDL_CreateWindow("My 2D Game", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, SCREEN_WIDTH, SCREEN_HEIGHT, SDL_WINDOW_SHOWN);
         if (g_Window == NULL)
         {
             printf("ERORR Could not create window%s \n", SDL_GetError());

@@ -1,6 +1,7 @@
 #include "GameObject.hpp"
 #include "Game.hpp"
 #include "Vector.hpp"
+#include <cstdio>
 
 void SDLgameObject::draw()
 {

@@ -34,7 +34,7 @@
 		{
 			"clangd":
 			{
-				"enabled": false
+				"enabled": true
 			}
 		}
 	}

@@ -1,92 +1,167 @@
 [
 {
   "directory": "/Users/aliabdulkareem/dev/Game/build",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DCMAKE_INTDIR=\\\"Debug\\\" -I/usr/local/include -I../include -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -Wall -Wextra -pedantic -Werror -m64 -std=c++14 -o CMakeFiles/main.dir/Debug/src/main.cpp.o -c /Users/aliabdulkareem/dev/Game/src/main.cpp",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DCMAKE_INTDIR=\\\"Debug\\\" -I/usr/local/include -I../include -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -Wall -Wextra -pedantic -Werror -m64 -std=c++17 -o CMakeFiles/main.dir/Debug/src/main.cpp.o -c /Users/aliabdulkareem/dev/Game/src/main.cpp",
   "file": "/Users/aliabdulkareem/dev/Game/src/main.cpp"
 },
 {
   "directory": "/Users/aliabdulkareem/dev/Game/build",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DCMAKE_INTDIR=\\\"Debug\\\" -I/usr/local/include -I../include -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -Wall -Wextra -pedantic -Werror -m64 -std=c++14 -o CMakeFiles/main.dir/Debug/src/Game.cpp.o -c /Users/aliabdulkareem/dev/Game/src/Game.cpp",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DCMAKE_INTDIR=\\\"Debug\\\" -I/usr/local/include -I../include -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -Wall -Wextra -pedantic -Werror -m64 -std=c++17 -o CMakeFiles/main.dir/Debug/src/Game.cpp.o -c /Users/aliabdulkareem/dev/Game/src/Game.cpp",
   "file": "/Users/aliabdulkareem/dev/Game/src/Game.cpp"
 },
 {
   "directory": "/Users/aliabdulkareem/dev/Game/build",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DCMAKE_INTDIR=\\\"Debug\\\" -I/usr/local/include -I../include -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -Wall -Wextra -pedantic -Werror -m64 -std=c++14 -o CMakeFiles/main.dir/Debug/src/TextureManager.cpp.o -c /Users/aliabdulkareem/dev/Game/src/TextureManager.cpp",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DCMAKE_INTDIR=\\\"Debug\\\" -I/usr/local/include -I../include -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -Wall -Wextra -pedantic -Werror -m64 -std=c++17 -o CMakeFiles/main.dir/Debug/src/TextureManager.cpp.o -c /Users/aliabdulkareem/dev/Game/src/TextureManager.cpp",
   "file": "/Users/aliabdulkareem/dev/Game/src/TextureManager.cpp"
 },
 {
   "directory": "/Users/aliabdulkareem/dev/Game/build",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DCMAKE_INTDIR=\\\"Debug\\\" -I/usr/local/include -I../include -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -Wall -Wextra -pedantic -Werror -m64 -std=c++14 -o CMakeFiles/main.dir/Debug/src/Player.cpp.o -c /Users/aliabdulkareem/dev/Game/src/Player.cpp",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DCMAKE_INTDIR=\\\"Debug\\\" -I/usr/local/include -I../include -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -Wall -Wextra -pedantic -Werror -m64 -std=c++17 -o CMakeFiles/main.dir/Debug/src/Player.cpp.o -c /Users/aliabdulkareem/dev/Game/src/Player.cpp",
   "file": "/Users/aliabdulkareem/dev/Game/src/Player.cpp"
 },
 {
   "directory": "/Users/aliabdulkareem/dev/Game/build",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DCMAKE_INTDIR=\\\"Debug\\\" -I/usr/local/include -I../include -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -Wall -Wextra -pedantic -Werror -m64 -std=c++14 -o CMakeFiles/main.dir/Debug/src/Enemy.cpp.o -c /Users/aliabdulkareem/dev/Game/src/Enemy.cpp",
-  "file": "/Users/aliabdulkareem/dev/Game/src/Enemy.cpp"
-},
-{
-  "directory": "/Users/aliabdulkareem/dev/Game/build",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DCMAKE_INTDIR=\\\"Debug\\\" -I/usr/local/include -I../include -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -Wall -Wextra -pedantic -Werror -m64 -std=c++14 -o CMakeFiles/main.dir/Debug/src/GameObject.cpp.o -c /Users/aliabdulkareem/dev/Game/src/GameObject.cpp",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DCMAKE_INTDIR=\\\"Debug\\\" -I/usr/local/include -I../include -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -Wall -Wextra -pedantic -Werror -m64 -std=c++17 -o CMakeFiles/main.dir/Debug/src/GameObject.cpp.o -c /Users/aliabdulkareem/dev/Game/src/GameObject.cpp",
   "file": "/Users/aliabdulkareem/dev/Game/src/GameObject.cpp"
 },
 {
   "directory": "/Users/aliabdulkareem/dev/Game/build",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DCMAKE_INTDIR=\\\"Release\\\" -I/usr/local/include -I../include -O3 -DNDEBUG -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -Wall -Wextra -pedantic -Werror -m64 -std=c++14 -o CMakeFiles/main.dir/Release/src/main.cpp.o -c /Users/aliabdulkareem/dev/Game/src/main.cpp",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DCMAKE_INTDIR=\\\"Debug\\\" -I/usr/local/include -I../include -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -Wall -Wextra -pedantic -Werror -m64 -std=c++17 -o CMakeFiles/main.dir/Debug/src/Enemy.cpp.o -c /Users/aliabdulkareem/dev/Game/src/Enemy.cpp",
+  "file": "/Users/aliabdulkareem/dev/Game/src/Enemy.cpp"
+},
+{
+  "directory": "/Users/aliabdulkareem/dev/Game/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DCMAKE_INTDIR=\\\"Debug\\\" -I/usr/local/include -I../include -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -Wall -Wextra -pedantic -Werror -m64 -std=c++17 -o CMakeFiles/main.dir/Debug/src/Vector.cpp.o -c /Users/aliabdulkareem/dev/Game/src/Vector.cpp",
+  "file": "/Users/aliabdulkareem/dev/Game/src/Vector.cpp"
+},
+{
+  "directory": "/Users/aliabdulkareem/dev/Game/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DCMAKE_INTDIR=\\\"Debug\\\" -I/usr/local/include -I../include -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -Wall -Wextra -pedantic -Werror -m64 -std=c++17 -o CMakeFiles/main.dir/Debug/src/InputHandler.cpp.o -c /Users/aliabdulkareem/dev/Game/src/InputHandler.cpp",
+  "file": "/Users/aliabdulkareem/dev/Game/src/InputHandler.cpp"
+},
+{
+  "directory": "/Users/aliabdulkareem/dev/Game/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DCMAKE_INTDIR=\\\"Debug\\\" -I/usr/local/include -I../include -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -Wall -Wextra -pedantic -Werror -m64 -std=c++17 -o CMakeFiles/main.dir/Debug/src/MenuState.cpp.o -c /Users/aliabdulkareem/dev/Game/src/MenuState.cpp",
+  "file": "/Users/aliabdulkareem/dev/Game/src/MenuState.cpp"
+},
+{
+  "directory": "/Users/aliabdulkareem/dev/Game/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DCMAKE_INTDIR=\\\"Debug\\\" -I/usr/local/include -I../include -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -Wall -Wextra -pedantic -Werror -m64 -std=c++17 -o CMakeFiles/main.dir/Debug/src/PlayState.cpp.o -c /Users/aliabdulkareem/dev/Game/src/PlayState.cpp",
+  "file": "/Users/aliabdulkareem/dev/Game/src/PlayState.cpp"
+},
+{
+  "directory": "/Users/aliabdulkareem/dev/Game/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DCMAKE_INTDIR=\\\"Debug\\\" -I/usr/local/include -I../include -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -Wall -Wextra -pedantic -Werror -m64 -std=c++17 -o CMakeFiles/main.dir/Debug/src/GameStateMachine.cpp.o -c /Users/aliabdulkareem/dev/Game/src/GameStateMachine.cpp",
+  "file": "/Users/aliabdulkareem/dev/Game/src/GameStateMachine.cpp"
+},
+{
+  "directory": "/Users/aliabdulkareem/dev/Game/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DCMAKE_INTDIR=\\\"Release\\\" -I/usr/local/include -I../include -O3 -DNDEBUG -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -Wall -Wextra -pedantic -Werror -m64 -std=c++17 -o CMakeFiles/main.dir/Release/src/main.cpp.o -c /Users/aliabdulkareem/dev/Game/src/main.cpp",
   "file": "/Users/aliabdulkareem/dev/Game/src/main.cpp"
 },
 {
   "directory": "/Users/aliabdulkareem/dev/Game/build",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DCMAKE_INTDIR=\\\"Release\\\" -I/usr/local/include -I../include -O3 -DNDEBUG -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -Wall -Wextra -pedantic -Werror -m64 -std=c++14 -o CMakeFiles/main.dir/Release/src/Game.cpp.o -c /Users/aliabdulkareem/dev/Game/src/Game.cpp",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DCMAKE_INTDIR=\\\"Release\\\" -I/usr/local/include -I../include -O3 -DNDEBUG -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -Wall -Wextra -pedantic -Werror -m64 -std=c++17 -o CMakeFiles/main.dir/Release/src/Game.cpp.o -c /Users/aliabdulkareem/dev/Game/src/Game.cpp",
   "file": "/Users/aliabdulkareem/dev/Game/src/Game.cpp"
 },
 {
   "directory": "/Users/aliabdulkareem/dev/Game/build",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DCMAKE_INTDIR=\\\"Release\\\" -I/usr/local/include -I../include -O3 -DNDEBUG -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -Wall -Wextra -pedantic -Werror -m64 -std=c++14 -o CMakeFiles/main.dir/Release/src/TextureManager.cpp.o -c /Users/aliabdulkareem/dev/Game/src/TextureManager.cpp",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DCMAKE_INTDIR=\\\"Release\\\" -I/usr/local/include -I../include -O3 -DNDEBUG -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -Wall -Wextra -pedantic -Werror -m64 -std=c++17 -o CMakeFiles/main.dir/Release/src/TextureManager.cpp.o -c /Users/aliabdulkareem/dev/Game/src/TextureManager.cpp",
   "file": "/Users/aliabdulkareem/dev/Game/src/TextureManager.cpp"
 },
 {
   "directory": "/Users/aliabdulkareem/dev/Game/build",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DCMAKE_INTDIR=\\\"Release\\\" -I/usr/local/include -I../include -O3 -DNDEBUG -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -Wall -Wextra -pedantic -Werror -m64 -std=c++14 -o CMakeFiles/main.dir/Release/src/Player.cpp.o -c /Users/aliabdulkareem/dev/Game/src/Player.cpp",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DCMAKE_INTDIR=\\\"Release\\\" -I/usr/local/include -I../include -O3 -DNDEBUG -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -Wall -Wextra -pedantic -Werror -m64 -std=c++17 -o CMakeFiles/main.dir/Release/src/Player.cpp.o -c /Users/aliabdulkareem/dev/Game/src/Player.cpp",
   "file": "/Users/aliabdulkareem/dev/Game/src/Player.cpp"
 },
 {
   "directory": "/Users/aliabdulkareem/dev/Game/build",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DCMAKE_INTDIR=\\\"Release\\\" -I/usr/local/include -I../include -O3 -DNDEBUG -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -Wall -Wextra -pedantic -Werror -m64 -std=c++14 -o CMakeFiles/main.dir/Release/src/Enemy.cpp.o -c /Users/aliabdulkareem/dev/Game/src/Enemy.cpp",
-  "file": "/Users/aliabdulkareem/dev/Game/src/Enemy.cpp"
-},
-{
-  "directory": "/Users/aliabdulkareem/dev/Game/build",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DCMAKE_INTDIR=\\\"Release\\\" -I/usr/local/include -I../include -O3 -DNDEBUG -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -Wall -Wextra -pedantic -Werror -m64 -std=c++14 -o CMakeFiles/main.dir/Release/src/GameObject.cpp.o -c /Users/aliabdulkareem/dev/Game/src/GameObject.cpp",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DCMAKE_INTDIR=\\\"Release\\\" -I/usr/local/include -I../include -O3 -DNDEBUG -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -Wall -Wextra -pedantic -Werror -m64 -std=c++17 -o CMakeFiles/main.dir/Release/src/GameObject.cpp.o -c /Users/aliabdulkareem/dev/Game/src/GameObject.cpp",
   "file": "/Users/aliabdulkareem/dev/Game/src/GameObject.cpp"
 },
 {
   "directory": "/Users/aliabdulkareem/dev/Game/build",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DCMAKE_INTDIR=\\\"RelWithDebInfo\\\" -I/usr/local/include -I../include -O2 -g -DNDEBUG -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -Wall -Wextra -pedantic -Werror -m64 -std=c++14 -o CMakeFiles/main.dir/RelWithDebInfo/src/main.cpp.o -c /Users/aliabdulkareem/dev/Game/src/main.cpp",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DCMAKE_INTDIR=\\\"Release\\\" -I/usr/local/include -I../include -O3 -DNDEBUG -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -Wall -Wextra -pedantic -Werror -m64 -std=c++17 -o CMakeFiles/main.dir/Release/src/Enemy.cpp.o -c /Users/aliabdulkareem/dev/Game/src/Enemy.cpp",
+  "file": "/Users/aliabdulkareem/dev/Game/src/Enemy.cpp"
+},
+{
+  "directory": "/Users/aliabdulkareem/dev/Game/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DCMAKE_INTDIR=\\\"Release\\\" -I/usr/local/include -I../include -O3 -DNDEBUG -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -Wall -Wextra -pedantic -Werror -m64 -std=c++17 -o CMakeFiles/main.dir/Release/src/Vector.cpp.o -c /Users/aliabdulkareem/dev/Game/src/Vector.cpp",
+  "file": "/Users/aliabdulkareem/dev/Game/src/Vector.cpp"
+},
+{
+  "directory": "/Users/aliabdulkareem/dev/Game/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DCMAKE_INTDIR=\\\"Release\\\" -I/usr/local/include -I../include -O3 -DNDEBUG -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -Wall -Wextra -pedantic -Werror -m64 -std=c++17 -o CMakeFiles/main.dir/Release/src/InputHandler.cpp.o -c /Users/aliabdulkareem/dev/Game/src/InputHandler.cpp",
+  "file": "/Users/aliabdulkareem/dev/Game/src/InputHandler.cpp"
+},
+{
+  "directory": "/Users/aliabdulkareem/dev/Game/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DCMAKE_INTDIR=\\\"Release\\\" -I/usr/local/include -I../include -O3 -DNDEBUG -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -Wall -Wextra -pedantic -Werror -m64 -std=c++17 -o CMakeFiles/main.dir/Release/src/MenuState.cpp.o -c /Users/aliabdulkareem/dev/Game/src/MenuState.cpp",
+  "file": "/Users/aliabdulkareem/dev/Game/src/MenuState.cpp"
+},
+{
+  "directory": "/Users/aliabdulkareem/dev/Game/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DCMAKE_INTDIR=\\\"Release\\\" -I/usr/local/include -I../include -O3 -DNDEBUG -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -Wall -Wextra -pedantic -Werror -m64 -std=c++17 -o CMakeFiles/main.dir/Release/src/PlayState.cpp.o -c /Users/aliabdulkareem/dev/Game/src/PlayState.cpp",
+  "file": "/Users/aliabdulkareem/dev/Game/src/PlayState.cpp"
+},
+{
+  "directory": "/Users/aliabdulkareem/dev/Game/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DCMAKE_INTDIR=\\\"Release\\\" -I/usr/local/include -I../include -O3 -DNDEBUG -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -Wall -Wextra -pedantic -Werror -m64 -std=c++17 -o CMakeFiles/main.dir/Release/src/GameStateMachine.cpp.o -c /Users/aliabdulkareem/dev/Game/src/GameStateMachine.cpp",
+  "file": "/Users/aliabdulkareem/dev/Game/src/GameStateMachine.cpp"
+},
+{
+  "directory": "/Users/aliabdulkareem/dev/Game/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DCMAKE_INTDIR=\\\"RelWithDebInfo\\\" -I/usr/local/include -I../include -O2 -g -DNDEBUG -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -Wall -Wextra -pedantic -Werror -m64 -std=c++17 -o CMakeFiles/main.dir/RelWithDebInfo/src/main.cpp.o -c /Users/aliabdulkareem/dev/Game/src/main.cpp",
   "file": "/Users/aliabdulkareem/dev/Game/src/main.cpp"
 },
 {
   "directory": "/Users/aliabdulkareem/dev/Game/build",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DCMAKE_INTDIR=\\\"RelWithDebInfo\\\" -I/usr/local/include -I../include -O2 -g -DNDEBUG -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -Wall -Wextra -pedantic -Werror -m64 -std=c++14 -o CMakeFiles/main.dir/RelWithDebInfo/src/Game.cpp.o -c /Users/aliabdulkareem/dev/Game/src/Game.cpp",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DCMAKE_INTDIR=\\\"RelWithDebInfo\\\" -I/usr/local/include -I../include -O2 -g -DNDEBUG -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -Wall -Wextra -pedantic -Werror -m64 -std=c++17 -o CMakeFiles/main.dir/RelWithDebInfo/src/Game.cpp.o -c /Users/aliabdulkareem/dev/Game/src/Game.cpp",
   "file": "/Users/aliabdulkareem/dev/Game/src/Game.cpp"
 },
 {
   "directory": "/Users/aliabdulkareem/dev/Game/build",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DCMAKE_INTDIR=\\\"RelWithDebInfo\\\" -I/usr/local/include -I../include -O2 -g -DNDEBUG -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -Wall -Wextra -pedantic -Werror -m64 -std=c++14 -o CMakeFiles/main.dir/RelWithDebInfo/src/TextureManager.cpp.o -c /Users/aliabdulkareem/dev/Game/src/TextureManager.cpp",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DCMAKE_INTDIR=\\\"RelWithDebInfo\\\" -I/usr/local/include -I../include -O2 -g -DNDEBUG -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -Wall -Wextra -pedantic -Werror -m64 -std=c++17 -o CMakeFiles/main.dir/RelWithDebInfo/src/TextureManager.cpp.o -c /Users/aliabdulkareem/dev/Game/src/TextureManager.cpp",
   "file": "/Users/aliabdulkareem/dev/Game/src/TextureManager.cpp"
 },
 {
   "directory": "/Users/aliabdulkareem/dev/Game/build",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DCMAKE_INTDIR=\\\"RelWithDebInfo\\\" -I/usr/local/include -I../include -O2 -g -DNDEBUG -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -Wall -Wextra -pedantic -Werror -m64 -std=c++14 -o CMakeFiles/main.dir/RelWithDebInfo/src/Player.cpp.o -c /Users/aliabdulkareem/dev/Game/src/Player.cpp",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DCMAKE_INTDIR=\\\"RelWithDebInfo\\\" -I/usr/local/include -I../include -O2 -g -DNDEBUG -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -Wall -Wextra -pedantic -Werror -m64 -std=c++17 -o CMakeFiles/main.dir/RelWithDebInfo/src/Player.cpp.o -c /Users/aliabdulkareem/dev/Game/src/Player.cpp",
   "file": "/Users/aliabdulkareem/dev/Game/src/Player.cpp"
 },
 {
   "directory": "/Users/aliabdulkareem/dev/Game/build",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DCMAKE_INTDIR=\\\"RelWithDebInfo\\\" -I/usr/local/include -I../include -O2 -g -DNDEBUG -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -Wall -Wextra -pedantic -Werror -m64 -std=c++14 -o CMakeFiles/main.dir/RelWithDebInfo/src/Enemy.cpp.o -c /Users/aliabdulkareem/dev/Game/src/Enemy.cpp",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DCMAKE_INTDIR=\\\"RelWithDebInfo\\\" -I/usr/local/include -I../include -O2 -g -DNDEBUG -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -Wall -Wextra -pedantic -Werror -m64 -std=c++17 -o CMakeFiles/main.dir/RelWithDebInfo/src/GameObject.cpp.o -c /Users/aliabdulkareem/dev/Game/src/GameObject.cpp",
+  "file": "/Users/aliabdulkareem/dev/Game/src/GameObject.cpp"
+},
+{
+  "directory": "/Users/aliabdulkareem/dev/Game/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DCMAKE_INTDIR=\\\"RelWithDebInfo\\\" -I/usr/local/include -I../include -O2 -g -DNDEBUG -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -Wall -Wextra -pedantic -Werror -m64 -std=c++17 -o CMakeFiles/main.dir/RelWithDebInfo/src/Enemy.cpp.o -c /Users/aliabdulkareem/dev/Game/src/Enemy.cpp",
   "file": "/Users/aliabdulkareem/dev/Game/src/Enemy.cpp"
 },
 {
   "directory": "/Users/aliabdulkareem/dev/Game/build",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DCMAKE_INTDIR=\\\"RelWithDebInfo\\\" -I/usr/local/include -I../include -O2 -g -DNDEBUG -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -Wall -Wextra -pedantic -Werror -m64 -std=c++14 -o CMakeFiles/main.dir/RelWithDebInfo/src/GameObject.cpp.o -c /Users/aliabdulkareem/dev/Game/src/GameObject.cpp",
-  "file": "/Users/aliabdulkareem/dev/Game/src/GameObject.cpp"
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DCMAKE_INTDIR=\\\"RelWithDebInfo\\\" -I/usr/local/include -I../include -O2 -g -DNDEBUG -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -Wall -Wextra -pedantic -Werror -m64 -std=c++17 -o CMakeFiles/main.dir/RelWithDebInfo/src/Vector.cpp.o -c /Users/aliabdulkareem/dev/Game/src/Vector.cpp",
+  "file": "/Users/aliabdulkareem/dev/Game/src/Vector.cpp"
+},
+{
+  "directory": "/Users/aliabdulkareem/dev/Game/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DCMAKE_INTDIR=\\\"RelWithDebInfo\\\" -I/usr/local/include -I../include -O2 -g -DNDEBUG -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -Wall -Wextra -pedantic -Werror -m64 -std=c++17 -o CMakeFiles/main.dir/RelWithDebInfo/src/InputHandler.cpp.o -c /Users/aliabdulkareem/dev/Game/src/InputHandler.cpp",
+  "file": "/Users/aliabdulkareem/dev/Game/src/InputHandler.cpp"
+},
+{
+  "directory": "/Users/aliabdulkareem/dev/Game/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DCMAKE_INTDIR=\\\"RelWithDebInfo\\\" -I/usr/local/include -I../include -O2 -g -DNDEBUG -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -Wall -Wextra -pedantic -Werror -m64 -std=c++17 -o CMakeFiles/main.dir/RelWithDebInfo/src/MenuState.cpp.o -c /Users/aliabdulkareem/dev/Game/src/MenuState.cpp",
+  "file": "/Users/aliabdulkareem/dev/Game/src/MenuState.cpp"
+},
+{
+  "directory": "/Users/aliabdulkareem/dev/Game/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DCMAKE_INTDIR=\\\"RelWithDebInfo\\\" -I/usr/local/include -I../include -O2 -g -DNDEBUG -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -Wall -Wextra -pedantic -Werror -m64 -std=c++17 -o CMakeFiles/main.dir/RelWithDebInfo/src/PlayState.cpp.o -c /Users/aliabdulkareem/dev/Game/src/PlayState.cpp",
+  "file": "/Users/aliabdulkareem/dev/Game/src/PlayState.cpp"
+},
+{
+  "directory": "/Users/aliabdulkareem/dev/Game/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DCMAKE_INTDIR=\\\"RelWithDebInfo\\\" -I/usr/local/include -I../include -O2 -g -DNDEBUG -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -Wall -Wextra -pedantic -Werror -m64 -std=c++17 -o CMakeFiles/main.dir/RelWithDebInfo/src/GameStateMachine.cpp.o -c /Users/aliabdulkareem/dev/Game/src/GameStateMachine.cpp",
+  "file": "/Users/aliabdulkareem/dev/Game/src/GameStateMachine.cpp"
 }
 ]

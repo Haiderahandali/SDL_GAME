@@ -4,10 +4,11 @@
 
 int main(int argc, char const* argv[])
 {
+    //----------------- USE LEO SUGGESTION LATER FOR STRING_VIEWS ----------------//
+    //----------------------------------------------------------//
 
     auto& game = Game::instance();
 
-    // -------------- Initialiasation of the Game -----------------//
     if (!game.init())
     {
         printf("ERROR Init %s%d\n", argv[1], argc);

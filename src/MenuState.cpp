@@ -1,8 +1,7 @@
 #include "MenuState.hpp"
 
-void MenuState::onEnter()
-{
-}
+const std::string MenuState::m_MenuID = "Main Menu";
+
 void MenuState::update()
 {
 }
@@ -11,6 +10,14 @@ void MenuState::render()
 {
 }
 
-void MenuState::onExit()
+bool MenuState::onExit()
 {
+    printf("Main Menu was Was Exited \n");
+    return true;
+}
+
+bool MenuState::onEnter()
+{
+    printf("Main Menu was Initliasised \n");
+    return true;
 }

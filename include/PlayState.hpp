@@ -1,4 +1,5 @@
 #pragma once
+#include "GameObject.hpp"
 #include "GameStates.hpp"
 #include <string_view>
 
@@ -14,4 +15,5 @@ public:
 
 private:
     static constexpr inline std::string_view m_PlayStateID = "Play State ID";
+    std::vector<std::unique_ptr<GameObject>> m_gameObjects;
 };

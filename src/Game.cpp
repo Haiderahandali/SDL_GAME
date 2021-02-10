@@ -34,16 +34,12 @@ bool Game::init()
 
     bool success = true;
 
-    m_GameStateMachine = std::make_unique<GameStateMachine>();
-    m_GameStateMachine->changeState(std::make_unique<PlayState>());
-
     // auto loadP = std::make_unique<LoadParams>(SDL_Rect { 300, 300, 82, 100 }, "Run");
-    auto loadE = std::make_unique<LoadParams>(SDL_Rect { 0, 0, 82, 100 }, "Run");
+    // auto loadE = std::make_unique<LoadParams>(SDL_Rect { 0, 0, 82, 100 }, "Run");
 
-    m_enemy = std::make_unique<Enemy>(loadE.get());
+    // m_enemy = std::make_unique<Enemy>(loadE.get());
 
     //gObjects.emplace_back(std::move(m_player));
-    gObjects.emplace_back(std::move(m_enemy));
 
     //Frame Init
     // m_frameLocationX = m_frameWidth;
@@ -68,13 +64,16 @@ bool Game::init()
         else
         {
             g_Renderer = SDL_CreateRenderer(g_Window, -1, 0);
-            if (!TextureManager::instance().load("../../res/Run.png", "Run", g_Renderer))
-            {
-                printf("ERROR texture_manager failed to load image\n");
-                success = false;
-            }
+            // if (!TextureManager::instance().load("../../res/Run.png", "Run", g_Renderer))
+            // {
+            //     printf("ERROR texture_manager failed to load image\n");
+            //     success = false;
+            // }
         }
     }
+
+    m_GameStateMachine = std::make_unique<GameStateMachine>();
+    m_GameStateMachine->changeState(std::make_unique<PlayState>());
     return success;
 }
 
@@ -120,7 +119,7 @@ bool Game::init()
 void Game::render()
 {
 
-    SDL_SetRenderDrawColor(g_Renderer, 0XFF, 0XFF, 0XFF, 0XFF);
+    SDL_SetRenderDrawColor(g_Renderer, 0X00, 0X00, 0X00, 0XFF);
     SDL_RenderClear(g_Renderer);
 
     //   TextureManager::instance().drawFrame("Run", { 0, 120, m_frameWidth, m_frameHeight }, 1, m_currentFrame, g_Renderer);
@@ -166,8 +165,11 @@ void Game::handleEvents()
 
     if (InputHandler::instance().onKeyDown(SDL_SCANCODE_RETURN))
     {
-        auto temp = std::make_unique<MenuState>();
-        m_GameStateMachine->changeState(std::move(temp));
+        m_GameStateMachine->changeState(std::make_unique<MenuState>());
+    }
+    if (InputHandler::instance().onKeyDown(SDL_SCANCODE_RSHIFT))
+    {
+        m_GameStateMachine->changeState(std::make_unique<PlayState>());
     }
 }
 

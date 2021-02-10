@@ -17,7 +17,8 @@ add_executable(main
 	src/InputHandler.cpp
 	src/MenuState.cpp
 	src/PlayState.cpp
-	src/GameStateMachine.cpp)
+	src/GameStateMachine.cpp
+	src/MenuButton.cpp)
 
 
 

@@ -4,6 +4,7 @@
 #include "GameObject.hpp"
 #include "GameStateMachine.hpp"
 #include "InputHandler.hpp"
+#include "MenuButton.hpp"
 #include "Player.hpp"
 #include "Vendors.hpp"
 #include <TextureManager.hpp>
@@ -50,6 +51,7 @@ private:
     std::unique_ptr<GameStateMachine> m_GameStateMachine;
     std::unique_ptr<Player> m_player;
     std::unique_ptr<Enemy> m_enemy;
+    std::unique_ptr<MenuButton> m_MenuButton;
 
     std::vector<std::unique_ptr<GameObject>> gObjects;
     //------------------ SDL Window, Renderer, Surface and Texture -----------------------//

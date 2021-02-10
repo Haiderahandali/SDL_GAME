@@ -35,3 +35,14 @@ void GameStateMachine::pushState(std::unique_ptr<GameStates> State)
     m_gameStates.emplace_back(std::move(State));
     m_gameStates.back()->onEnter();
 }
+
+void GameStateMachine::update()
+{
+    if (!m_gameStates.empty())
+        m_gameStates.back()->update();
+}
+void GameStateMachine::render()
+{
+    if (!m_gameStates.empty())
+        m_gameStates.back()->render();
+}

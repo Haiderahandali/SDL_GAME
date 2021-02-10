@@ -1,5 +1,7 @@
 #pragma once
+#include "GameObject.hpp"
 #include "GameStates.hpp"
+#include <memory>
 #include <string_view>
 class MenuState : public GameStates
 {
@@ -18,4 +20,5 @@ public:
 
 private:
     static const std::string m_MenuID;
+    std::vector<std::unique_ptr<GameObject>> m_gameObjects;
 };

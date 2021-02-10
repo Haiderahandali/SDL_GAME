@@ -9,6 +9,8 @@ public:
     ~GameStateMachine() {
 
     };
+    void update();
+    void render();
 
     void pushState(std::unique_ptr<GameStates>);
     void changeState(std::unique_ptr<GameStates>);

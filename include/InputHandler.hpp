@@ -21,6 +21,8 @@ public:
 
     bool onKeyDown(SDL_Scancode key);
     bool onKeyUp(SDL_Scancode key);
+    inline Vector2d const& getMousePosition() const { return m_mousePosition; }
+    std::vector<bool> m_mouseButtonStates;
 
 private:
     // private functions to handle different event types
@@ -36,13 +38,11 @@ private:
         return m_mouseButtonStates[buttonNumber];
     }
 
-    inline Vector2d const& getMousePosition() const { return m_mousePosition; }
-
     Uint8 const* m_keystates;
 
 private:
     Vector2d m_mousePosition;
-    std::vector<bool> m_mouseButtonStates;
+
     InputHandler();
     ~InputHandler();
 };

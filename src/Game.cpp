@@ -1,6 +1,7 @@
 #include "Game.hpp"
 #include "GameStateMachine.hpp"
 #include "InputHandler.hpp"
+#include "MenuButton.hpp"
 #include "MenuState.hpp"
 #include "PlayState.hpp"
 #include "Vendors.hpp"
@@ -21,7 +22,6 @@ Game::Game()
 
 Game::~Game()
 {
-
 }
 
 //----------------------------- TEXTURE MANAGER CREATION -------------------//
@@ -39,7 +39,7 @@ bool Game::init()
 
     // auto loadP = std::make_unique<LoadParams>(SDL_Rect { 300, 300, 82, 100 }, "Run");
     auto loadE = std::make_unique<LoadParams>(SDL_Rect { 0, 0, 82, 100 }, "Run");
-    // m_player   = std::make_unique<Player>(loadP.get());
+
     m_enemy = std::make_unique<Enemy>(loadE.get());
 
     //gObjects.emplace_back(std::move(m_player));
@@ -126,11 +126,12 @@ void Game::render()
     //   TextureManager::instance().drawFrame("Run", { 0, 120, m_frameWidth, m_frameHeight }, 1, m_currentFrame, g_Renderer);
     // TextureManager::instance().draw("Run", { 0, 0, m_frameWidth * 6, m_frameHeight }, g_Renderer);
 
-    for (auto& g : gObjects)
-    {
+    // for (auto& g : gObjects)
+    // {
 
-        g->draw();
-    }
+    //     g->draw();
+    // }
+    m_GameStateMachine->render();
 
     //SDL_RenderCopyEx(g_Renderer, g_Texture, &m_srcRect, &m_desRect, 0, 0, SDL_FLIP_HORIZONTAL);
 
@@ -157,14 +158,12 @@ void Game::clean()
 void Game::update()
 {
     //m_currentFrame = int((SDL_GetTicks() / 100) % 6);
-
-    for (auto& g : gObjects)
-
-        g->update();
+    m_GameStateMachine->update();
 }
 void Game::handleEvents()
 {
     InputHandler::instance().update();
+
     if (InputHandler::instance().onKeyDown(SDL_SCANCODE_RETURN))
     {
         auto temp = std::make_unique<MenuState>();

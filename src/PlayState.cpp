@@ -14,6 +14,6 @@ bool PlayState::onEnter()
 }
 bool PlayState::onExit()
 {
-    printf("exiting Play State");
+    printf("Exiting Play State \n");
     return true;
 }

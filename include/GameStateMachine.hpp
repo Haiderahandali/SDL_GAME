@@ -6,12 +6,14 @@ class GameStateMachine
 {
 public:
     GameStateMachine() {};
-    ~GameStateMachine() {};
+    ~GameStateMachine() {
 
-    void pushState(GameStates* State);
-    void changeState(GameStates* State);
+    };
+
+    void pushState(std::unique_ptr<GameStates>);
+    void changeState(std::unique_ptr<GameStates>);
     void popState();
 
 private:
-    std::vector<GameStates*> m_gameStates;
+    std::vector<std::unique_ptr<GameStates>> m_gameStates;
 };

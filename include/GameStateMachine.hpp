@@ -13,5 +13,5 @@ public:
     void popState();
 
 private:
-    std::vector<std::unique_ptr<GameStates>> m_gameStates;
+    std::vector<GameStates*> m_gameStates;
 };

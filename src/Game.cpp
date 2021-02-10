@@ -1,6 +1,9 @@
 #include "Game.hpp"
+#include "GameStateMachine.hpp"
 #include "InputHandler.hpp"
+#include "PlayState.hpp"
 #include "Vendors.hpp"
+#include <memory>
 
 //-----------------//
 const int SCREEN_WIDTH  = 640;
@@ -29,6 +32,7 @@ bool Game::init()
 
     bool success = true;
 
+    m_GameStateMachine = std::make_unique<GameStateMachine>();
     // auto loadP = std::make_unique<LoadParams>(SDL_Rect { 300, 300, 82, 100 }, "Run");
     auto loadE = std::make_unique<LoadParams>(SDL_Rect { 0, 0, 82, 100 }, "Run");
     // m_player   = std::make_unique<Player>(loadP.get());
@@ -157,4 +161,19 @@ void Game::update()
 void Game::handleEvents()
 {
     InputHandler::instance().update();
+    if (InputHandler::instance().onKeyDown(SDL_SCANCODE_RETURN))
+    {
+        auto temp = new PlayState();
+        m_GameStateMachine->changeState(temp);
+    }
 }
+
+/*instance
+
+
+
+
+
+
+
+*/

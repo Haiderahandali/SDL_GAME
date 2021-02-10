@@ -2,10 +2,12 @@
 #define GAME_H
 #include "Enemy.hpp"
 #include "GameObject.hpp"
+#include "GameStateMachine.hpp"
 #include "InputHandler.hpp"
 #include "Player.hpp"
 #include "Vendors.hpp"
 #include <TextureManager.hpp>
+#include <memory>
 
 const int FPS = 120;
 
@@ -45,6 +47,7 @@ public:
 private:
     Game();
 
+    std::unique_ptr<GameStateMachine> m_GameStateMachine;
     std::unique_ptr<Player> m_player;
     std::unique_ptr<Enemy> m_enemy;
 

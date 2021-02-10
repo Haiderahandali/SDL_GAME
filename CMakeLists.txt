@@ -14,7 +14,8 @@ add_executable(main
 	src/GameObject.cpp
 	src/Enemy.cpp
 	src/Vector.cpp
-	src/InputHandler.cpp)
+	src/InputHandler.cpp
+	src/MenuState.cpp)
 
 
 #finding the libraries 

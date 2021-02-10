@@ -4,6 +4,86 @@
 		"selected_items":
 		[
 			[
+				"on",
+				"onKeyDown(SDL_Scancode key)\t  bool"
+			],
+			[
+				"onMouse",
+				"onMouseMove(SDL_Event &event)\t  void"
+			],
+			[
+				"In",
+				"InputHandler\t  Class"
+			],
+			[
+				"pri",
+				"private"
+			],
+			[
+				"set",
+				"setY(const float &Y)\t  void"
+			],
+			[
+				"m_",
+				"m_volicty\t  Vector2d"
+			],
+			[
+				"SDL_SCAN",
+				"SDL_SCANCODE_DOWN\t  SDL_Scancode"
+			],
+			[
+				"in",
+				"inputHandler()\t  void"
+			],
+			[
+				"fram",
+				"frameHeight\t  int"
+			],
+			[
+				"frame",
+				"frameWidth\t  int"
+			],
+			[
+				"ge",
+				"getX() const\t  float"
+			],
+			[
+				"get",
+				"getY() const\t  float"
+			],
+			[
+				"vec",
+				"vec\t  Vector2d"
+			],
+			[
+				"vector",
+				"Vector2d"
+			],
+			[
+				"game",
+				"Game\t  Class"
+			],
+			[
+				"includ",
+				"include \"header\"\t  Snippet"
+			],
+			[
+				"ins",
+				"instance"
+			],
+			[
+				"SDL_MO",
+				"SDL_MOUSEBUTTONUP\t  SDL_EventType"
+			],
+			[
+				"SDL_Button",
+				"SDL_BUTTON_MIDDLE\t  Text"
+			],
+			[
+				"SDL_Bu",
+				"SDL_BUTTON_LEFT\t  Text"
+			],
+			[
 				"im",
 				"imagePath\t  std::string"
 			],
@@ -12,24 +92,8 @@
 				"include \"header\"\t  Snippet"
 			],
 			[
-				"m_",
-				"m_acceleration\t  Vector2d"
-			],
-			[
-				"vec",
-				"Vector2d\t  Struct"
-			],
-			[
-				"fram",
-				"frameWidth\t  int"
-			],
-			[
 				"g",
 				"getX() const\t  int"
-			],
-			[
-				"in",
-				"include <header>\t  Snippet"
 			],
 			[
 				"m_frame",
@@ -42,10 +106,6 @@
 			[
 				"uniqu",
 				"unique_ptr<class _Tp, class _Dp>\t  Class"
-			],
-			[
-				"get",
-				"get() const\t  pointer"
 			],
 			[
 				"unique",
@@ -96,10 +156,6 @@
 				"include \"header\"\t  Snippet"
 			],
 			[
-				"game",
-				"GameObject\t  Class"
-			],
-			[
 				"Gmae",
 				"GameObject.hpp\"\t  File"
 			],
@@ -138,10 +194,6 @@
 			[
 				"upd",
 				"updateFrameNumber(const int &frameWdith, const int &framesSpeed, const int &framesCount)\t  int"
-			],
-			[
-				"frame",
-				"frameWdith\t  int"
 			],
 			[
 				"frames",
@@ -238,10 +290,6 @@
 			[
 				"c",
 				"c_str() const\t  const value_type *"
-			],
-			[
-				"pri",
-				"private:\t  Snippet"
 			],
 			[
 				"SDL_Destro",
@@ -397,6 +445,105 @@
 			]
 		]
 	},
+	"buffers":
+	[
+		{
+			"file": "include/InputHandler.hpp",
+			"settings":
+			{
+				"buffer_size": 996,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/InputHandler.cpp",
+			"settings":
+			{
+				"buffer_size": 2286,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "include/Game.hpp",
+			"settings":
+			{
+				"buffer_size": 1528,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "include/Enemy.hpp",
+			"settings":
+			{
+				"buffer_size": 326,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "include/GameObject.hpp",
+			"settings":
+			{
+				"buffer_size": 1314,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "include/TextureManager.hpp",
+			"settings":
+			{
+				"buffer_size": 1264,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/Game.cpp",
+			"settings":
+			{
+				"buffer_size": 4469,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/main.cpp",
+			"settings":
+			{
+				"buffer_size": 1050,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/GameObject.cpp",
+			"settings":
+			{
+				"buffer_size": 900,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/Enemy.cpp",
+			"settings":
+			{
+				"buffer_size": 954,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/Vector.cpp",
+			"settings":
+			{
+				"buffer_size": 2561,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
 	"build_system": "Debug",
 	"build_system_choices":
 	[
@@ -443,6 +590,22 @@
 			[
 				"restart",
 				"LSP: Restart Servers"
+			],
+			[
+				"close",
+				"Terminus: Close All"
+			],
+			[
+				"eanble lang",
+				"LSP: Enable Language Server in Project"
+			],
+			[
+				"disable",
+				"LSP: Disable Language Server in Project"
+			],
+			[
+				"enable",
+				"LSP: Enable Language Server in Project"
 			],
 			[
 				"ter",
@@ -503,14 +666,6 @@
 			[
 				"eanble",
 				"LSP: Enable Language Server in Project"
-			],
-			[
-				"enable",
-				"LSP: Enable Language Server Globally"
-			],
-			[
-				"disable",
-				"LSP: Disable Language Server in Project"
 			],
 			[
 				"disb",
@@ -587,25 +742,34 @@
 		"side_bar_visible": false,
 		"status_bar_visible": false
 	},
+	"expanded_folders":
+	[
+		"/Users/aliabdulkareem/dev/Game"
+	],
 	"file_history":
 	[
-		"/Users/aliabdulkareem/dev/Game/src/Game.cpp",
-		"/Users/aliabdulkareem/dev/Game/CMakeLists.txt",
-		"/Users/aliabdulkareem/dev/Game/src/TextureManager.cpp",
-		"/Users/aliabdulkareem/dev/Game/src/Vector.cpp",
+		"/Users/aliabdulkareem/dev/Game/include/Vector.hpp",
 		"/Users/aliabdulkareem/dev/Game/src/Enemy.cpp",
-		"/Users/aliabdulkareem/dev/Game/src/Player.cpp",
+		"/Users/aliabdulkareem/dev/Game/src/Vector.cpp",
+		"/Users/aliabdulkareem/dev/Game/src/InputHander.cpp",
 		"/Users/aliabdulkareem/dev/Game/src/GameObject.cpp",
-		"/Users/aliabdulkareem/dev/Game/include/TextureManager.hpp",
+		"/Users/aliabdulkareem/dev/Game/src/TextureManager.cpp",
+		"/Users/aliabdulkareem/dev/Game/.cache/clangd/index/TextureManager.cpp.50D5EE30055AD1DA.idx",
+		"/Users/aliabdulkareem/dev/Game/Platformer.sublime-project",
+		"/Users/aliabdulkareem/dev/Game/src/InputHandler.cpp",
+		"/Users/aliabdulkareem/dev/Game/build/.ninja_deps",
+		"/Users/aliabdulkareem/dev/Game/bin/debug/main",
+		"/Users/aliabdulkareem/dev/Game/src/Player.cpp",
 		"/Users/aliabdulkareem/dev/Game/include/Game.hpp",
+		"/Users/aliabdulkareem/dev/Game/CMakeLists.txt",
+		"/Users/aliabdulkareem/dev/Game/src/Game.cpp",
+		"/Users/aliabdulkareem/dev/Game/include/TextureManager.hpp",
 		"/Users/aliabdulkareem/dev/Game/include/GameObject.hpp",
 		"/Users/aliabdulkareem/dev/Game/include/Enemy.hpp",
-		"/Users/aliabdulkareem/dev/Game/include/Vector.hpp",
 		"/Users/aliabdulkareem/dev/Game/.cache/clangd/index/TextureManager.hpp.5F3E6C8B55BC718B.idx",
 		"/Users/aliabdulkareem/dev/Game/include/Player.hpp",
 		"/Users/aliabdulkareem/dev/Game/src/main.cpp",
 		"/Users/aliabdulkareem/dev/Game/include/Vendors.hpp",
-		"/Users/aliabdulkareem/dev/Game/Platformer.sublime-project",
 		"/Users/aliabdulkareem/dev/Game/src/fail.cpp",
 		"/Users/aliabdulkareem/dev/Game/include/Core.hpp",
 		"/Users/aliabdulkareem/dev/Game/src/GameObject.hpp",
@@ -646,6 +810,11 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"draw",
+			"d",
+			"X",
+			"InputHander",
+			"true",
 			"gScreen",
 			"time",
 			"m_pos",
@@ -674,6 +843,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"InputHandler",
 			"position",
 			"gScreenSurface",
 			"gCurrentSurface"
@@ -684,6 +854,548 @@
 		"whole_word": false,
 		"wrap": true
 	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "include/InputHandler.hpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 996,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								596,
+								555
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".<>:\"/",
+									"selector": "source.c++"
+								}
+							],
+							"lsp_active": true,
+							"lsp_language":
+							{
+								"clangd": "cpp"
+							},
+							"show_definitions": false,
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/InputHandler.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2286,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1848,
+								1848
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".<>:\"/",
+									"selector": "source.c++"
+								}
+							],
+							"lsp_active": true,
+							"lsp_language":
+							{
+								"clangd": "cpp"
+							},
+							"show_definitions": false,
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 529.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "include/Game.hpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1528,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								258,
+								258
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".<>:\"/",
+									"selector": "source.c++"
+								}
+							],
+							"lsp_active": true,
+							"lsp_language":
+							{
+								"clangd": "cpp"
+							},
+							"show_definitions": false,
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "include/Enemy.hpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 326,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								315,
+								315
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".<>:\"/",
+									"selector": "source.c++"
+								}
+							],
+							"lsp_active": true,
+							"lsp_language":
+							{
+								"clangd": "cpp"
+							},
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "include/GameObject.hpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1314,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								999,
+								999
+							]
+						],
+						"settings":
+						{
+							"lsp_active": true,
+							"lsp_language":
+							{
+								"clangd": "cpp"
+							},
+							"show_definitions": false,
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 419.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "include/TextureManager.hpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1264,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								232,
+								232
+							]
+						],
+						"settings":
+						{
+							"lsp_active": true,
+							"lsp_language":
+							{
+								"clangd": "cpp"
+							},
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 4,
+			"sheets":
+			[
+				{
+					"buffer": 6,
+					"file": "src/Game.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4469,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2095,
+								2095
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".<>:\"/",
+									"selector": "source.c++"
+								}
+							],
+							"lsp_active": true,
+							"lsp_language":
+							{
+								"clangd": "cpp"
+							},
+							"show_definitions": false,
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 694.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "src/main.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1050,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								631,
+								645
+							]
+						],
+						"settings":
+						{
+							"lsp_active": true,
+							"lsp_language":
+							{
+								"clangd": "cpp"
+							},
+							"show_definitions": false,
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/InputHandler.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2286,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2102,
+								2102
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".<>:\"/",
+									"selector": "source.c++"
+								}
+							],
+							"lsp_active": true,
+							"lsp_language":
+							{
+								"clangd": "cpp"
+							},
+							"show_definitions": false,
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 657.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "src/GameObject.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 900,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								410,
+								410
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".<>:\"/",
+									"selector": "source.c++"
+								}
+							],
+							"lsp_active": true,
+							"lsp_language":
+							{
+								"clangd": "cpp"
+							},
+							"show_definitions": false,
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 168.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "src/Enemy.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 954,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								502,
+								502
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".<>:\"/",
+									"selector": "source.c++"
+								}
+							],
+							"lsp_active": true,
+							"lsp_language":
+							{
+								"clangd": "cpp"
+							},
+							"show_definitions": false,
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "src/Vector.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2561,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1380,
+								1380
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".<>:\"/",
+									"selector": "source.c++"
+								}
+							],
+							"lsp_active": true,
+							"lsp_language":
+							{
+								"clangd": "cpp"
+							},
+							"show_definitions": false,
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 671.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				}
+			]
+		}
+	],
 	"incremental_find":
 	{
 		"height": 24.0
@@ -724,7 +1436,7 @@
 	"menu_visible": true,
 	"output.Terminus":
 	{
-		"height": 372.0
+		"height": 205.0
 	},
 	"output.diagnostics":
 	{
@@ -732,7 +1444,7 @@
 	},
 	"output.exec":
 	{
-		"height": 315.0
+		"height": 109.0
 	},
 	"output.find_results":
 	{
@@ -743,9 +1455,10 @@
 		"height": 0.0
 	},
 	"pinned_build_system": "",
+	"project": "Platformer.sublime-project",
 	"replace":
 	{
-		"height": 71.0
+		"height": 44.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -755,16 +1468,92 @@
 		"selected_items":
 		[
 			[
-				"",
-				"CMakeLists.txt"
+				"input",
+				"src/InputHandler.cpp"
+			],
+			[
+				"ene",
+				"src/Enemy.cpp"
+			],
+			[
+				"main.cp",
+				"src/main.cpp"
 			],
 			[
 				"game",
 				"src/Game.cpp"
 			],
 			[
+				"gaeobject",
+				"src/GameObject.cpp"
+			],
+			[
+				"vector",
+				"src/Vector.cpp"
+			],
+			[
+				"gameobject",
+				"include/GameObject.hpp"
+			],
+			[
+				"gameob",
+				"src/GameObject.cpp"
+			],
+			[
+				"vecto",
+				"src/Vector.cpp"
+			],
+			[
+				"input ",
+				"include/InputHandler.hpp"
+			],
+			[
 				"texture",
 				"include/TextureManager.hpp"
+			],
+			[
+				"hextu",
+				".cache/clangd/index/TextureManager.cpp.50D5EE30055AD1DA.idx"
+			],
+			[
+				"gmaeobjec",
+				"src/GameObject.cpp"
+			],
+			[
+				"game.",
+				"include/Game.hpp"
+			],
+			[
+				"handle",
+				"src/InputHandler.cpp"
+			],
+			[
+				"game.cp",
+				"src/Game.cpp"
+			],
+			[
+				"vecot",
+				"src/Vector.cpp"
+			],
+			[
+				"",
+				"src/Vector.cpp"
+			],
+			[
+				"ene.",
+				"src/Enemy.cpp"
+			],
+			[
+				"player",
+				"src/Player.cpp"
+			],
+			[
+				"game.h",
+				"include/Game.hpp"
+			],
+			[
+				"cmake",
+				"CMakeLists.txt"
 			],
 			[
 				"hexture",
@@ -787,16 +1576,8 @@
 				"src/main.cpp"
 			],
 			[
-				"ene",
-				"src/Enemy.cpp"
-			],
-			[
 				"gmae",
 				"src/GameObject.cpp"
-			],
-			[
-				"gameob",
-				"include/GameObject.hpp"
 			],
 			[
 				"vec",
@@ -827,10 +1608,6 @@
 				"src/main.cpp"
 			],
 			[
-				"game.",
-				"src/Game.cpp"
-			],
-			[
 				"player.c",
 				"src/Player.cpp"
 			],
@@ -851,18 +1628,6 @@
 				"CMakeLists.txt"
 			],
 			[
-				"vecot",
-				"include/Vector.hpp"
-			],
-			[
-				"vector",
-				"include/Vector.hpp"
-			],
-			[
-				"cmake",
-				"CMakeLists.txt"
-			],
-			[
 				"gameobjc",
 				"src/GameObject.cpp"
 			],
@@ -876,10 +1641,6 @@
 			],
 			[
 				"gmae.h",
-				"include/Game.hpp"
-			],
-			[
-				"game.h",
 				"include/Game.hpp"
 			],
 			[
@@ -915,20 +1676,12 @@
 				"include/GameObject.hpp"
 			],
 			[
-				"player",
-				"src/Player.cpp"
-			],
-			[
 				"gmae.",
 				"src/Game.cpp"
 			],
 			[
 				"cmak",
 				"CMakeLists.txt"
-			],
-			[
-				"main.cp",
-				"src/main.cpp"
 			],
 			[
 				"gmae.cp",
@@ -971,6 +1724,7 @@
 		],
 		"width": 0.0
 	},
+	"selected_group": 1,
 	"settings":
 	{
 	},

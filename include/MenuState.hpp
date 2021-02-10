@@ -7,7 +7,7 @@ public:
     void onExit() override;
     void render() override;
 
-    inline virtual std::string getID() const override
+    virtual std::string getMenuID() const override
     {
         return m_MenuID;
     }
@@ -15,5 +15,3 @@ public:
 private:
     static const std::string m_MenuID;
 };
-
-const std::string MenuState::m_MenuID = "Main Menu";

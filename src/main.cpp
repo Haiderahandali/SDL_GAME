@@ -21,10 +21,9 @@ int main(int argc, char const* argv[])
     while (game.isRunning())
     {
 
-        game.handleEvents();
         game.render();
-
         game.update();
+        game.handleEvents();
         SDL_Delay(10);
     }
 

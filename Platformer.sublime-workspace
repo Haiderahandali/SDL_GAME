@@ -4,20 +4,52 @@
 		"selected_items":
 		[
 			[
+				"m_",
+				"m_menuObject\t  std::vector<std::unique_ptr<GameObject>>"
+			],
+			[
+				"GameStaet",
+				"GameStates\t  Class"
+			],
+			[
+				"get",
+				"getStateMachineRef() const\t  const std::unique_ptr<GameStateMachine> &"
+			],
+			[
+				"Gamestate",
+				"GameStateMachine\t  Class"
+			],
+			[
+				"s_me",
+				"s_exitFromMenu()\t  void"
+			],
+			[
+				"menu",
+				"s_exitFromMenu()\t  void"
+			],
+			[
+				"m_current",
+				"m_currentRow\t  int"
+			],
+			[
+				"setF",
+				"setFrameHeight(float)\t  void"
+			],
+			[
+				"frame",
+				"frameHeight\t  int"
+			],
+			[
+				"setf",
+				"setFrameHeight(float x)\t  void"
+			],
+			[
 				"MOUSE",
 				"MOUSE_ON\t  button_state"
 			],
 			[
 				"Game",
 				"Game\t  Class"
-			],
-			[
-				"get",
-				"get() const\t  pointer"
-			],
-			[
-				"menu",
-				"menu\t  std::unique_ptr<GameObject>"
 			],
 			[
 				"Me",
@@ -60,10 +92,6 @@
 				"Vector2d\t  Struct"
 			],
 			[
-				"frame",
-				"frameHeight\t  int"
-			],
-			[
 				"Play",
 				"PlayState\t  Class"
 			],
@@ -74,10 +102,6 @@
 			[
 				"inlc",
 				"include \"header\"\t  Snippet"
-			],
-			[
-				"GameStaet",
-				"GameStateMachine\t  Class"
 			],
 			[
 				"target_comp",
@@ -126,10 +150,6 @@
 			[
 				"set",
 				"setY(const float &Y)\t  void"
-			],
-			[
-				"m_",
-				"m_volicty\t  Vector2d"
 			],
 			[
 				"SDL_SCAN",
@@ -494,26 +514,6 @@
 			[
 				"re",
 				"reverse_line"
-			],
-			[
-				"f",
-				"fahr"
-			],
-			[
-				"w",
-				"wlength"
-			],
-			[
-				"wor",
-				"words_length_histogram"
-			],
-			[
-				"wo",
-				"words_length_histogram"
-			],
-			[
-				"print",
-				"printf\tprintf …"
 			]
 		]
 	},
@@ -741,6 +741,7 @@
 	},
 	"file_history":
 	[
+		"/Users/aliabdulkareem/Desktop/temp.cpp",
 		"/Users/aliabdulkareem/dev/Game/src/PlayState.cpp",
 		"/Users/aliabdulkareem/dev/Game/include/GameStateMachine.hpp",
 		"/Users/aliabdulkareem/dev/Game/src/GameStateMachine.cpp",
@@ -819,6 +820,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"MenuButton",
 			"TextureManager",
 			"FF",
 			"Run",
@@ -956,19 +958,63 @@
 		[
 			[
 				"menustate",
-				"src/MenuState.cpp"
+				"include/MenuState.hpp"
 			],
 			[
 				"gamestate",
-				"include/GameStates.hpp"
+				"src/GameStateMachine.cpp"
+			],
+			[
+				"playstate",
+				"src/PlayState.cpp"
+			],
+			[
+				"game.hpp",
+				"include/Game.hpp"
+			],
+			[
+				"game.cpp",
+				"src/Game.cpp"
+			],
+			[
+				"gmaeobject",
+				"src/GameObject.cpp"
+			],
+			[
+				"gameobje",
+				"include/GameObject.hpp"
+			],
+			[
+				"textureman",
+				"src/TextureManager.cpp"
+			],
+			[
+				"gameobject",
+				"src/GameObject.cpp"
+			],
+			[
+				"menubut",
+				"include/MenuButton.hpp"
+			],
+			[
+				"Gmaeobject",
+				"src/GameObject.cpp"
+			],
+			[
+				"menu",
+				"src/MenuButton.cpp"
+			],
+			[
+				"menustat",
+				"src/MenuState.cpp"
+			],
+			[
+				"gamemac",
+				"src/GameStateMachine.cpp"
 			],
 			[
 				"main.c",
 				"src/main.cpp"
-			],
-			[
-				"gameobject",
-				"include/GameObject.hpp"
 			],
 			[
 				"game.c",
@@ -983,28 +1029,12 @@
 				"src/MenuState.cpp"
 			],
 			[
-				"menubut",
-				"src/MenuButton.cpp"
-			],
-			[
 				"menubu",
 				"include/MenuButton.hpp"
 			],
 			[
-				"menu",
-				"include/MenuState.hpp"
-			],
-			[
 				"cmake",
 				"CMakeLists.txt"
-			],
-			[
-				"playstate",
-				"src/PlayState.cpp"
-			],
-			[
-				"gmaeobject",
-				"src/GameObject.cpp"
 			],
 			[
 				"game",
@@ -1037,10 +1067,6 @@
 			[
 				"gamestat",
 				"include/GameStateMachine.hpp"
-			],
-			[
-				"game.hpp",
-				"include/Game.hpp"
 			],
 			[
 				"gmae.c",
@@ -1353,7 +1379,7 @@
 	"show_minimap": false,
 	"show_open_files": false,
 	"show_tabs": true,
-	"side_bar_visible": true,
+	"side_bar_visible": false,
 	"side_bar_width": 229.0,
 	"status_bar_visible": true,
 	"template_settings":

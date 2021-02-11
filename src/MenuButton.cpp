@@ -7,8 +7,6 @@ MenuButton::MenuButton(const LoadParams* lparam, void (*callback)())
     , m_callback(callback)
 {
     m_currentFrame = MOUSE_OUT;
-    frameWidth     = 180;
-    frameHeight    = 200;
 }
 void MenuButton::draw()
 {

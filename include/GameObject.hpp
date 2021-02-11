@@ -34,6 +34,8 @@ public:
     virtual void update() = 0;
     virtual void draw()   = 0;
     virtual ~GameObject() {};
+    virtual void setFrameWidth(float)  = 0;
+    virtual void setFrameHeight(float) = 0;
 
 protected:
 };
@@ -46,6 +48,8 @@ public:
 
     virtual void draw();
     virtual void update();
+    void setFrameWidth(float);
+    void setFrameHeight(float);
 
 protected:
     Vector2d position;

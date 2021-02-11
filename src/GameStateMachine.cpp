@@ -6,20 +6,20 @@ void GameStateMachine::changeState(std::unique_ptr<GameStates> State)
 
     {
 
-        if (!(m_gameStates.back()->getStateID() == State->getStateID()))
+        if (m_gameStates.back()->getStateID() == State->getStateID())
         {
-
+            printf("it is the same state\n");
+            return;
+        }
+        else
+        {
             if (m_gameStates.back()->onExit())
                 m_gameStates.pop_back();
         }
-        else
-            printf("it is the same state\n");
     }
-    else
-    {
-        m_gameStates.emplace_back(std::move(State));
-        m_gameStates.back()->onEnter();
-    }
+
+    m_gameStates.push_back(std::move(State));
+    m_gameStates.back()->onEnter();
 }
 
 void GameStateMachine::popState()

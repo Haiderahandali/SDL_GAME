@@ -45,6 +45,9 @@ public:
     }
     void quit() { running = false; }
 
+public:
+    const std::unique_ptr<GameStateMachine>& getStateMachineRef() const { return m_GameStateMachine; }
+
 private:
     Game();
 

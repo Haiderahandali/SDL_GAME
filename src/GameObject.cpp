@@ -33,3 +33,12 @@ void SDLgameObject::update()
     m_volicty += m_acceleration;
     position += m_volicty;
 }
+
+void SDLgameObject::setFrameWidth(float x)
+{
+    frameHeight = x;
+}
+void SDLgameObject::setFrameHeight(float y)
+{
+    frameHeight = y;
+}

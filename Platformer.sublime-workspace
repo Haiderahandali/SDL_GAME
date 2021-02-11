@@ -4,12 +4,92 @@
 		"selected_items":
 		[
 			[
-				"Pla",
-				"PlayState\t  Class"
+				"MOUSE",
+				"MOUSE_ON\t  button_state"
+			],
+			[
+				"Game",
+				"Game\t  Class"
+			],
+			[
+				"get",
+				"get() const\t  pointer"
+			],
+			[
+				"menu",
+				"menu\t  std::unique_ptr<GameObject>"
+			],
+			[
+				"Me",
+				"MenuButton\t  Class"
+			],
+			[
+				"unique",
+				"unique_ptr<class _Tp, class _Dp>\t  Class"
+			],
+			[
+				"include",
+				"include \"header\"\t  Snippet"
+			],
+			[
+				"Gamestaet",
+				"GameStateMachine\t  Class"
+			],
+			[
+				"Menu",
+				"MenuButton"
+			],
+			[
+				"mouse",
+				"MOUSE_ON\t  button_state"
+			],
+			[
+				"fram",
+				"frameHeight\t  int"
+			],
+			[
+				"mo",
+				"mousePosition\t  Vector2d"
+			],
+			[
+				"x",
+				"getX() const\t  float"
+			],
+			[
+				"veco",
+				"Vector2d\t  Struct"
+			],
+			[
+				"frame",
+				"frameHeight\t  int"
 			],
 			[
 				"Play",
-				"PlayState.hpp\"\t  File"
+				"PlayState\t  Class"
+			],
+			[
+				"GmaeSat",
+				"GameStateMachine.hpp\"\t  File"
+			],
+			[
+				"inlc",
+				"include \"header\"\t  Snippet"
+			],
+			[
+				"GameStaet",
+				"GameStateMachine\t  Class"
+			],
+			[
+				"target_comp",
+				"target_compile_options\tbuiltin"
+			],
+			[
+				"GameState",
+				"GameStateMachine.hpp\"\t  File"
+			],
+			[
+				"Pla",
+				"PlayState\t  Class"
 			],
 			[
 				"inc",
@@ -28,16 +108,8 @@
 				"onExit()\t  void"
 			],
 			[
-				"menu",
-				"MenuState.hpp\"\t  File"
-			],
-			[
 				"pri",
 				"private:\t  Snippet"
-			],
-			[
-				"Game",
-				"GameStates\t  Class"
 			],
 			[
 				"inclu",
@@ -68,20 +140,8 @@
 				"inputHandler()\t  void"
 			],
 			[
-				"fram",
-				"frameHeight\t  int"
-			],
-			[
-				"frame",
-				"frameWidth\t  int"
-			],
-			[
 				"ge",
 				"getX() const\t  float"
-			],
-			[
-				"get",
-				"getY() const\t  float"
 			],
 			[
 				"vec",
@@ -134,10 +194,6 @@
 			[
 				"uniqu",
 				"unique_ptr<class _Tp, class _Dp>\t  Class"
-			],
-			[
-				"unique",
-				"std::unique_ptr<class _Tp, class _Dp>\t  Class"
 			],
 			[
 				"m_cu",
@@ -509,6 +565,34 @@
 				"LSP: Restart Servers"
 			],
 			[
+				"UI",
+				"UI: Select Color Scheme"
+			],
+			[
+				"ui",
+				"UI: Select Theme"
+			],
+			[
+				"package install",
+				"Package Control: Install Package"
+			],
+			[
+				"cmake",
+				"Set Syntax: CMake"
+			],
+			[
+				"res",
+				"LSP: Restart Servers"
+			],
+			[
+				"rest",
+				"LSP: Restart Servers"
+			],
+			[
+				"color ui",
+				"UI: Select Color Scheme"
+			],
+			[
 				"close",
 				"Terminus: Close All"
 			],
@@ -535,10 +619,6 @@
 			[
 				"theme",
 				"UI: Select Color Scheme"
-			],
-			[
-				"cmake",
-				"Set Syntax: CMake"
 			],
 			[
 				"pakcage",
@@ -661,32 +741,41 @@
 	},
 	"file_history":
 	[
-		"/Users/aliabdulkareem/dev/Game/src/main.cpp",
-		"/Users/aliabdulkareem/dev/Game/include/MenuState.hpp",
-		"/Users/aliabdulkareem/dev/Game/include/PlayState.cpp",
-		"/Users/aliabdulkareem/dev/Game/include/PlayState.hpp",
-		"/Users/aliabdulkareem/dev/Game/CMakeLists.txt",
-		"/Users/aliabdulkareem/dev/Game/MenuState.cpp",
-		"/Users/aliabdulkareem/dev/Game/src/Vector.cpp",
-		"/Users/aliabdulkareem/dev/Game/src/Enemy.cpp",
-		"/Users/aliabdulkareem/dev/Game/src/GameObject.cpp",
+		"/Users/aliabdulkareem/dev/Game/src/PlayState.cpp",
+		"/Users/aliabdulkareem/dev/Game/include/GameStateMachine.hpp",
+		"/Users/aliabdulkareem/dev/Game/src/GameStateMachine.cpp",
 		"/Users/aliabdulkareem/dev/Game/src/InputHandler.cpp",
 		"/Users/aliabdulkareem/dev/Game/src/Game.cpp",
-		"/Users/aliabdulkareem/dev/Game/include/InputHandler.hpp",
-		"/Users/aliabdulkareem/dev/Game/include/TextureManager.hpp",
+		"/Users/aliabdulkareem/dev/Game/src/MenuButton.cpp",
 		"/Users/aliabdulkareem/dev/Game/include/GameObject.hpp",
-		"/Users/aliabdulkareem/dev/Game/include/Enemy.hpp",
-		"/Users/aliabdulkareem/dev/Game/include/Game.hpp",
+		"/Users/aliabdulkareem/dev/Game/src/MenuState.cpp",
+		"/Users/aliabdulkareem/dev/Game/include/MenuState.hpp",
 		"/Users/aliabdulkareem/dev/Game/include/GameStates.hpp",
+		"/Users/aliabdulkareem/dev/Game/src/main.cpp",
+		"/Users/aliabdulkareem/dev/Game/include/Game.hpp",
+		"/Users/aliabdulkareem/dev/Game/include/MenuButton.hpp",
+		"/Users/aliabdulkareem/dev/Game/include/PlayState.hpp",
+		"/Users/aliabdulkareem/dev/Game/CMakeLists.txt",
+		"/Users/aliabdulkareem/dev/Game/src/GameObject.cpp",
+		"/Users/aliabdulkareem/dev/Game/include/InputHandler.hpp",
+		"/Users/aliabdulkareem/dev/Game/src/InputHander.cpp",
+		"/Users/aliabdulkareem/dev/Game/MenuState.cpp",
+		"/Users/aliabdulkareem/dev/Game/src/Player.cpp",
+		"/Users/aliabdulkareem/.tmp/Emily/Makefile",
+		"/Users/aliabdulkareem/dev/Game/compile_commands.json",
+		"/Users/aliabdulkareem/dev/Game/build/compile_commands.json",
+		"/Users/aliabdulkareem/dev/Game/include/PlayState.cpp",
+		"/Users/aliabdulkareem/dev/Game/src/Vector.cpp",
+		"/Users/aliabdulkareem/dev/Game/src/Enemy.cpp",
+		"/Users/aliabdulkareem/dev/Game/include/TextureManager.hpp",
+		"/Users/aliabdulkareem/dev/Game/include/Enemy.hpp",
 		"/Users/aliabdulkareem/dev/Game/src/GameStates.cpp",
 		"/Users/aliabdulkareem/dev/Game/include/Vector.hpp",
-		"/Users/aliabdulkareem/dev/Game/src/InputHander.cpp",
 		"/Users/aliabdulkareem/dev/Game/src/TextureManager.cpp",
 		"/Users/aliabdulkareem/dev/Game/.cache/clangd/index/TextureManager.cpp.50D5EE30055AD1DA.idx",
 		"/Users/aliabdulkareem/dev/Game/Platformer.sublime-project",
 		"/Users/aliabdulkareem/dev/Game/build/.ninja_deps",
 		"/Users/aliabdulkareem/dev/Game/bin/debug/main",
-		"/Users/aliabdulkareem/dev/Game/src/Player.cpp",
 		"/Users/aliabdulkareem/dev/Game/.cache/clangd/index/TextureManager.hpp.5F3E6C8B55BC718B.idx",
 		"/Users/aliabdulkareem/dev/Game/include/Player.hpp",
 		"/Users/aliabdulkareem/dev/Game/include/Vendors.hpp",
@@ -715,7 +804,7 @@
 	],
 	"find":
 	{
-		"height": 24.0
+		"height": 40.0
 	},
 	"find_in_files":
 	{
@@ -730,6 +819,21 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"TextureManager",
+			"FF",
+			"Run",
+			"GameStates*",
+			"GameStates",
+			"GameStates*",
+			"GameStates",
+			"unqiue_ptr",
+			"GameStates",
+			"GameStates*",
+			"std::unique_ptr<",
+			"std::unique_ptr",
+			"17",
+			"14",
+			"17",
 			"void",
 			"GameStates.cpp",
 			"draw",
@@ -820,7 +924,7 @@
 	},
 	"output.diagnostics":
 	{
-		"height": 388.0
+		"height": 157.0
 	},
 	"output.exec":
 	{
@@ -833,6 +937,10 @@
 	"output.mdpopups":
 	{
 		"height": 0.0
+	},
+	"output.references":
+	{
+		"height": 109.0
 	},
 	"pinned_build_system": "",
 	"replace":
@@ -847,16 +955,176 @@
 		"selected_items":
 		[
 			[
+				"menustate",
+				"src/MenuState.cpp"
+			],
+			[
+				"gamestate",
+				"include/GameStates.hpp"
+			],
+			[
+				"main.c",
+				"src/main.cpp"
+			],
+			[
+				"gameobject",
+				"include/GameObject.hpp"
+			],
+			[
+				"game.c",
+				"src/Game.cpp"
+			],
+			[
+				"game.cp",
+				"src/Game.cpp"
+			],
+			[
+				"menustae",
+				"src/MenuState.cpp"
+			],
+			[
+				"menubut",
+				"src/MenuButton.cpp"
+			],
+			[
+				"menubu",
+				"include/MenuButton.hpp"
+			],
+			[
+				"menu",
+				"include/MenuState.hpp"
+			],
+			[
+				"cmake",
+				"CMakeLists.txt"
+			],
+			[
+				"playstate",
+				"src/PlayState.cpp"
+			],
+			[
+				"gmaeobject",
+				"src/GameObject.cpp"
+			],
+			[
+				"game",
+				"src/Game.cpp"
+			],
+			[
+				"menustt",
+				"include/MenuState.hpp"
+			],
+			[
+				"gameobjec",
+				"include/GameObject.hpp"
+			],
+			[
+				"menub",
+				"src/MenuButton.cpp"
+			],
+			[
+				"game.hp",
+				"include/Game.hpp"
+			],
+			[
+				"menustaet",
+				"include/MenuState.hpp"
+			],
+			[
+				"gamestaet",
+				"src/GameStateMachine.cpp"
+			],
+			[
+				"gamestat",
+				"include/GameStateMachine.hpp"
+			],
+			[
+				"game.hpp",
+				"include/Game.hpp"
+			],
+			[
+				"gmae.c",
+				"src/Game.cpp"
+			],
+			[
+				"input",
+				"include/InputHandler.hpp"
+			],
+			[
+				"inputha",
+				"include/InputHandler.hpp"
+			],
+			[
+				"gamebo",
+				"src/GameObject.cpp"
+			],
+			[
+				"gameobj",
+				"include/GameObject.hpp"
+			],
+			[
+				"menusta",
+				"MenuState.cpp"
+			],
+			[
+				"playsa",
+				"src/PlayState.cpp"
+			],
+			[
+				"paly.",
+				"src/Player.cpp"
+			],
+			[
+				"gmaec",
+				"src/Game.cpp"
+			],
+			[
+				"palystate",
+				"src/PlayState.cpp"
+			],
+			[
+				"mneu",
+				"MenuState.cpp"
+			],
+			[
+				"gmae.hp",
+				"include/Game.hpp"
+			],
+			[
+				"gmae.cpp",
+				"src/Game.cpp"
+			],
+			[
+				"state",
+				"src/PlayState.cpp"
+			],
+			[
+				"",
+				"compile_commands.json"
+			],
+			[
+				"compiel",
+				"compile_commands.json"
+			],
+			[
+				"gmae.cp",
+				"src/Game.cpp"
+			],
+			[
+				"play",
+				"include/PlayState.hpp"
+			],
+			[
+				"Gmaestate",
+				"include/GameStates.hpp"
+			],
+			[
 				"mainc.",
 				"src/main.cpp"
 			],
 			[
 				"Menu",
 				"include/MenuState.hpp"
-			],
-			[
-				"cmake",
-				"CMakeLists.txt"
 			],
 			[
 				"GameS",
@@ -871,14 +1139,6 @@
 				"CMakeLists.txt"
 			],
 			[
-				"menu",
-				"MenuState.cpp"
-			],
-			[
-				"input",
-				"src/InputHandler.cpp"
-			],
-			[
 				"ene",
 				"src/Enemy.cpp"
 			],
@@ -887,20 +1147,12 @@
 				"src/main.cpp"
 			],
 			[
-				"game",
-				"src/Game.cpp"
-			],
-			[
 				"gaeobject",
 				"src/GameObject.cpp"
 			],
 			[
 				"vector",
 				"src/Vector.cpp"
-			],
-			[
-				"gameobject",
-				"include/GameObject.hpp"
 			],
 			[
 				"gameob",
@@ -935,15 +1187,7 @@
 				"src/InputHandler.cpp"
 			],
 			[
-				"game.cp",
-				"src/Game.cpp"
-			],
-			[
 				"vecot",
-				"src/Vector.cpp"
-			],
-			[
-				"",
 				"src/Vector.cpp"
 			],
 			[
@@ -987,20 +1231,8 @@
 				"include/Vector.hpp"
 			],
 			[
-				"gameobj",
-				"include/GameObject.hpp"
-			],
-			[
 				"gmaeob",
 				"include/GameObject.hpp"
-			],
-			[
-				"gmae.hp",
-				"include/Game.hpp"
-			],
-			[
-				"game.hp",
-				"include/Game.hpp"
 			],
 			[
 				"gmaeoh",
@@ -1033,14 +1265,6 @@
 			[
 				"gameobjc",
 				"src/GameObject.cpp"
-			],
-			[
-				"game.c",
-				"src/Game.cpp"
-			],
-			[
-				"main.c",
-				"src/main.cpp"
 			],
 			[
 				"gmae.h",
@@ -1087,10 +1311,6 @@
 				"CMakeLists.txt"
 			],
 			[
-				"gmae.cp",
-				"src/Game.cpp"
-			],
-			[
 				"gma",
 				"src/Game.cpp"
 			],
@@ -1133,7 +1353,7 @@
 	"show_minimap": false,
 	"show_open_files": false,
 	"show_tabs": true,
-	"side_bar_visible": false,
+	"side_bar_visible": true,
 	"side_bar_width": 229.0,
 	"status_bar_visible": true,
 	"template_settings":

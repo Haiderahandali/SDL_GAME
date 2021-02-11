@@ -15,7 +15,7 @@ bool MenuState::onEnter()
     else
     {
         auto temp                        = std::make_unique<LoadParams>(SDL_Rect { 200, 200, 180, 200 }, "Menu");
-        std::unique_ptr<GameObject> menu = std::make_unique<MenuButton>(temp.get());
+        std::unique_ptr<GameObject> menu = std::make_unique<MenuButton>(temp.get(), &s_menuToPlay);
         m_gameObjects.push_back(std::move(menu));
         return true;
     }
@@ -37,3 +37,13 @@ bool MenuState::onExit()
     printf("Exiting the Menu State\n");
     return true;
 }
+
+void MenuState::s_menuToPlay()
+{
+    printf(" button was clicked %d times\n", ++MenuState::number_of_clicks);
+}
+void MenuState::s_exitFromMenu()
+{
+    std::cout << "Exit button clicked\n";
+}
+int MenuState::number_of_clicks { 0 };

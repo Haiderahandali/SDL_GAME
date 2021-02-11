@@ -1,7 +1,6 @@
 #ifndef GMAE_OBJECT_H
 #define GMAE_OBJECT_H
 
-#include "TextureManager.hpp"
 #include "Vector.hpp"
 #include "Vendors.hpp"
 

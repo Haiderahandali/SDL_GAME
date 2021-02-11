@@ -14,7 +14,7 @@ const int FPS = 120;
 
 float const DELAY = 1000.0 / FPS;
 
-class Game
+class Game final
 {
 public:
     ~Game();
